@@ -1,0 +1,40 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Booking links</h1>
+    <div class="actions"><a class="btn btn-link" href="/events">Back to events</a></div>
+  </div>
+  <p class="muted">Each link opens the public booking form once. After a client submits, it stops working.</p>
+
+  <section class="card">
+    <form method="POST" action="/booking-links" class="filters">
+      <input type="text" name="label" placeholder="Who is it for? (optional)" />
+      <button type="submit" class="btn btn-primary">Generate link</button>
+    </form>
+  </section>
+
+  <section class="card">
+    {{#if links.length}}
+    <table class="data-table">
+      <thead><tr><th>For</th><th>Link</th><th>Status</th><th></th></tr></thead>
+      <tbody>
+        {{#each links}}
+        <tr>
+          <td>{{#if this.label}}{{this.label}}{{else}}<span class="muted">—</span>{{/if}}</td>
+          <td>{{#if this.used}}<span class="muted">{{this.url}}</span>{{else}}<input type="text" readonly value="{{this.url}}" onclick="this.select()" style="width:100%" />{{/if}}</td>
+          <td>{{#if this.used}}Used {{formatDate this.usedAt}}{{#if this.event}} · <a href="/events/{{this.event.id}}">{{this.event.clientName}}</a>{{/if}}{{else}}Unused{{/if}}</td>
+          <td>
+            <form method="POST" action="/booking-links/{{this.id}}/delete" style="display:inline" onsubmit="return confirm('Remove this link?')">
+              <button type="submit" class="btn btn-link">{{#if this.used}}Remove{{else}}Revoke{{/if}}</button>
+            </form>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}<p class="muted">No links yet.</p>{{/if}}
+  </section>
+</main>
+{{> footer}}

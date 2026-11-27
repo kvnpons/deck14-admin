@@ -1,0 +1,65 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>{{quotation.number}}</h1>
+    <div class="actions">
+      <a class="btn btn-link" href="/events/{{quotation.event.id}}">Back to event</a>
+      <button type="button" class="btn btn-secondary" onclick="window.print()">Print</button>
+      {{#unless quotation.invoiceId}}
+        <a class="btn btn-secondary" href="/quotations/{{quotation.id}}/edit">Edit</a>
+        <form method="POST" action="/quotations/{{quotation.id}}/convert" style="display:inline" onsubmit="return confirm('Convert this quotation to an invoice?')">
+          <button type="submit" class="btn btn-primary">Convert to invoice</button>
+        </form>
+      {{/unless}}
+      <form method="POST" action="/quotations/{{quotation.id}}/delete" style="display:inline" onsubmit="return confirm('Delete this quotation?')">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  {{#if quotation.invoice}}<p>Converted to <a href="/invoices/{{quotation.invoice.id}}">{{invoiceNumber}}</a>.</p>{{/if}}
+
+  <div class="invoice-sheet">
+    <div class="invoice-head">
+      <div class="co"><img src="/assets/logo.png" alt="" /><span>Deck14 Mobile Entertainment Inc.</span></div>
+      <div class="meta"><strong>{{#if isMain}}QUOTATION{{else}}ADDITIONAL REQUEST{{/if}}</strong><span class="muted">{{quotation.number}}</span></div>
+    </div>
+
+    <div class="invoice-bill">
+      <div>
+        <div class="muted"><small>EVENT</small></div>
+        <strong>{{quotation.event.clientName}}</strong>
+        {{#if quotation.event.venue}}<div style="white-space:pre-line">{{quotation.event.venue}}</div>{{/if}}
+      </div>
+      <div style="text-align:right">
+        <div class="muted"><small>EVENT DATE</small></div>
+        <strong>{{formatDate quotation.event.eventDate}}</strong>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Details</th><th class="num">Qty</th><th class="num">Price / unit</th><th class="num">Amount</th></tr>
+      </thead>
+      <tbody>
+        {{#if isMain}}
+          <tr><td>Service base fee</td><td class="num">1</td><td class="num">₱ {{formatMoney quotation.baseFee}}</td><td class="num">₱ {{formatMoney quotation.baseFee}}</td></tr>
+          <tr><td>Transportation fee <span class="muted small">({{quotation.distanceKm}} km from {{rates.origin}})</span></td><td class="num">1</td><td class="num">₱ {{formatMoney quotation.transportFee}}</td><td class="num">₱ {{formatMoney quotation.transportFee}}</td></tr>
+          <tr><td>Per-pax charge</td><td class="num">{{quotation.pax}}</td><td class="num">₱ {{formatMoney quotation.pricePerPax}}</td><td class="num">₱ {{formatMoney quotation.paxAmount}}</td></tr>
+        {{/if}}
+        {{#each quotation.items}}
+          <tr><td style="white-space:pre-line">{{this.description}}</td><td class="num">{{this.quantity}}</td><td class="num">₱ {{formatMoney this.unitPrice}}</td><td class="num">₱ {{formatMoney this.amount}}</td></tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <div class="invoice-total"><span>Total</span><span>₱ {{formatMoney quotation.total}}</span></div>
+
+    {{#if quotation.notes}}
+      <div><div class="muted"><small>NOTES</small></div><div style="white-space:pre-line">{{quotation.notes}}</div></div>
+    {{/if}}
+  </div>
+</main>
+{{> footer}}

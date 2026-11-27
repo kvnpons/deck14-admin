@@ -1,0 +1,116 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>{{event.clientName}}</h1>
+    <div class="actions">
+      <a class="btn btn-secondary" href="/events/{{event.id}}/edit">Edit</a>
+      <form method="POST" action="/events/{{event.id}}/delete" style="display:inline" onsubmit="return confirm('Delete this event?')">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  <span class="pill pill-{{event.status}}">{{event.status}}</span>
+  {{#if event.source}}<span class="muted small">submitted via {{event.source}}</span>{{/if}}
+
+  <section class="card">
+    <dl class="dl-grid">
+      <dt>Client</dt><dd>{{#if event.client}}<a href="/clients/{{event.client.id}}">{{event.client.name}}</a>{{else}}{{event.clientName}}{{/if}}</dd>
+      {{#if event.eventType}}<dt>Type</dt><dd>{{event.eventType}}</dd>{{/if}}
+      {{#if event.venue}}<dt>Address</dt><dd style="white-space:pre-line">{{event.venue}}</dd>{{/if}}
+      {{#if event.contactName}}<dt>Contact</dt><dd>{{event.contactName}}{{#if event.contactPhone}} · <a href="tel:{{event.contactPhone}}">{{event.contactPhone}}</a>{{/if}}</dd>{{/if}}
+      {{#if event.paymentStatus}}<dt>Payment</dt><dd>{{event.paymentStatus}}</dd>{{/if}}
+      <dt>Event date</dt><dd>{{formatDate event.eventDate}}</dd>
+      <dt>Pax</dt><dd>{{event.pax}}</dd>
+      <dt>Ingress time</dt><dd>{{event.ingressTime}}</dd>
+      <dt>Bar open time</dt><dd>{{event.barOpenTime}}</dd>
+      <dt>Notes</dt><dd>{{#if event.notes}}{{event.notes}}{{else}}<span class="muted">—</span>{{/if}}</dd>
+    </dl>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Menu</h2>
+      <a class="btn btn-link" href="/menu/builder?eventId={{event.id}}">{{#if event.menu}}Edit menu{{else}}+ Build menu{{/if}}</a>
+    </div>
+    {{#if event.menu}}
+      <p>{{event.menu.title}}{{#if event.menu.subtitle}} — {{event.menu.subtitle}}{{/if}} <span class="muted small">(saved {{formatDate event.menu.updatedAt}})</span></p>
+      <div class="actions">
+        <a class="btn btn-secondary" href="/menu/event/{{event.id}}/pdf" target="_blank">View PDF</a>
+        <form method="POST" action="/menu/event/{{event.id}}/delete" style="display:inline" onsubmit="return confirm('Remove the menu from this event?')">
+          <button type="submit" class="btn btn-link">Remove</button>
+        </form>
+      </div>
+    {{else}}
+      <p class="muted">No menu assigned.</p>
+    {{/if}}
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Quotations</h2>
+      <span>
+        {{#unless hasMainQuote}}<a class="btn btn-link" href="/events/{{event.id}}/quotations/new?kind=MAIN">+ Quotation</a>{{/unless}}
+        <a class="btn btn-link" href="/events/{{event.id}}/quotations/new?kind=ADDITIONAL">+ Additional request</a>
+      </span>
+    </div>
+    {{#if event.quotations.length}}
+    <table class="data-table">
+      <thead><tr><th>Quotation #</th><th>Type</th><th class="num">Total</th><th>Invoice</th></tr></thead>
+      <tbody>
+        {{#each event.quotations}}
+          <tr>
+            <td><a href="/quotations/{{this.id}}">QUO-{{padSerial this.serial}}</a></td>
+            <td>{{#if (eq this.kind "MAIN")}}Main{{else}}Additional{{/if}}</td>
+            <td class="num">₱ {{formatMoney this.total}}</td>
+            <td>{{#if this.invoice}}<a href="/invoices/{{this.invoice.id}}">INV-{{padSerial this.invoice.serial}}</a>{{else}}<span class="muted">—</span>{{/if}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No quotations yet.</p>
+    {{/if}}
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Liquidation</h2>
+      <a class="btn btn-link" href="/liquidation/new?eventId={{event.id}}">+ Add transaction</a>
+    </div>
+    <div class="kpi-row">
+      <div><div class="muted">Income</div><div class="positive">₱ {{formatMoney pnl.income}}</div></div>
+      <div><div class="muted">Expense</div><div class="negative">₱ {{formatMoney pnl.expense}}</div></div>
+      <div><div class="muted">Net</div><div class="{{#if (isNegative pnl.net)}}negative{{else}}positive{{/if}}"><strong>₱ {{formatMoney pnl.net}}</strong></div></div>
+    </div>
+
+    {{#if event.transactions.length}}
+    <table class="data-table">
+      <thead>
+        <tr><th>Date</th><th>Type</th><th>Description</th><th class="num">Amount</th><th></th></tr>
+      </thead>
+      <tbody>
+        {{#each event.transactions}}
+          <tr>
+            <td>{{formatDate this.occurredAt}}</td>
+            <td><span class="pill pill-{{this.type}}">{{this.type}}</span></td>
+            <td>{{this.description}}</td>
+            <td class="num">{{formatMoney this.amount}}</td>
+            <td class="num">
+              <form method="POST" action="/liquidation/{{this.id}}/delete" style="display:inline" onsubmit="return confirm('Remove this transaction?')">
+                <input type="hidden" name="redirectTo" value="/events/{{../event.id}}">
+                <button type="submit" class="btn btn-link">Remove</button>
+              </form>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No transactions recorded.</p>
+    {{/if}}
+  </section>
+</main>
+{{> footer}}

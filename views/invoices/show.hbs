@@ -1,0 +1,61 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>{{invoice.number}}</h1>
+    <div class="actions">
+      <a class="btn btn-link" href="/invoices">Back</a>
+      <a class="btn btn-secondary" href="/invoices/{{invoice.id}}/edit">Edit</a>
+      <button type="button" class="btn btn-secondary" onclick="window.print()">Print</button>
+      <a class="btn btn-primary" href="/invoices/{{invoice.id}}/export.pdf">Export PDF</a>
+    </div>
+  </div>
+
+  <div class="invoice-sheet">
+    <div class="invoice-head">
+      <div class="co"><img src="/assets/logo.png" alt="" /><span>{{companyName}}</span></div>
+      <div class="meta"><strong>INVOICE</strong><span class="muted">{{invoice.number}}</span></div>
+    </div>
+
+    <div class="invoice-bill">
+      <div>
+        <div class="muted"><small>BILLED TO</small></div>
+        <strong>{{invoice.customerName}}</strong>{{#if invoice.client}} <a class="small" href="/clients/{{invoice.client.id}}">(client profile)</a>{{/if}}
+        {{#if invoice.customerCompany}}<div>{{invoice.customerCompany}}</div>{{/if}}
+        {{#if invoice.customerAddress}}<div style="white-space:pre-line">{{invoice.customerAddress}}</div>{{/if}}
+      </div>
+      <div style="text-align:right">
+        <div class="muted"><small>DATE</small></div>
+        <strong>{{formatDate invoice.issueDate}}</strong>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Details</th><th class="num">Qty</th><th class="num">Amount / unit</th><th class="num">Amount</th></tr>
+      </thead>
+      <tbody>
+        {{#each invoice.items}}
+          <tr>
+            <td>{{this.description}}</td>
+            <td class="num">{{this.quantity}}</td>
+            <td class="num">₱ {{formatMoney this.unitPrice}}</td>
+            <td class="num">₱ {{formatMoney this.amount}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <div class="invoice-total"><span>Total</span><span>₱ {{formatMoney invoice.total}}</span></div>
+
+    {{#if invoice.notes}}
+      <div><div class="muted"><small>NOTES</small></div><div style="white-space:pre-line">{{invoice.notes}}</div></div>
+    {{/if}}
+
+    <p class="invoice-disclaimer">{{disclaimer}}</p>
+
+    <div class="invoice-foot"><img src="/assets/logo.png" alt="" /><span>{{companyName}}</span></div>
+  </div>
+</main>
+{{> footer}}

@@ -1,0 +1,106 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Liquidation</h1>
+    <a class="btn btn-primary" href="/liquidation/new">+ New transaction</a>
+  </div>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Employee ledger</h2>
+      <span class="muted">Loans &amp; petty cash by person</span>
+    </div>
+    {{#if ledger.length}}
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th class="num">Loans</th>
+          <th class="num">Petty cash</th>
+          <th class="num">Total outstanding</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each ledger}}
+          <tr>
+            <td>{{this.employeeName}}</td>
+            <td class="num">{{formatMoney this.loans}}</td>
+            <td class="num">{{formatMoney this.pettyCash}}</td>
+            <td class="num"><strong>{{formatMoney this.total}}</strong></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No loans or petty cash recorded.</p>
+    {{/if}}
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Transactions</h2>
+      <form method="GET" action="/liquidation" class="filters">
+        <label>Filter:
+          <select name="type" onchange="this.form.submit()">
+            <option value="">All</option>
+            {{#each transactionTypes}}
+              <option value="{{this}}" {{#if (eq this ../typeFilter)}}selected{{/if}}>{{this}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label>Event:
+          <select name="eventId" onchange="this.form.submit()">
+            <option value="">All</option>
+            {{#each events}}
+              <option value="{{this.id}}" {{#if (eq this.id ../eventFilter)}}selected{{/if}}>{{this.clientName}} · {{formatDate this.eventDate}}</option>
+            {{/each}}
+          </select>
+        </label>
+      </form>
+    </div>
+
+    {{#if transactions.length}}
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Event / Employee</th>
+          <th class="num">Amount</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each transactions}}
+          <tr>
+            <td>{{formatDate this.occurredAt}}</td>
+            <td><span class="pill pill-{{this.type}}">{{this.type}}</span></td>
+            <td>{{this.description}}</td>
+            <td>
+              {{#if this.event}}
+                <a href="/events/{{this.event.id}}">{{this.event.clientName}}</a>
+              {{else if this.employeeName}}
+                {{this.employeeName}}
+              {{else}}
+                <span class="muted">—</span>
+              {{/if}}
+            </td>
+            <td class="num">{{formatMoney this.amount}}</td>
+            <td>
+              <form method="POST" action="/liquidation/{{this.id}}/delete" onsubmit="return confirm('Remove transaction?')">
+                <button type="submit" class="btn-icon" title="Delete">×</button>
+              </form>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No transactions yet.</p>
+    {{/if}}
+  </section>
+</main>
+{{> footer}}

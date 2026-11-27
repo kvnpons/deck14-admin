@@ -1,0 +1,19 @@
+<nav class="topnav">
+  <div class="container nav-inner">
+    <a class="brand" href="/"><img class="brand-logo" src="/assets/logo.png" alt="" />Deck14 Admin</a>
+    <ul class="nav-links">
+      <li><a href="/">Dashboard</a></li>
+      <li><a href="/events">Events</a></li>
+      <li><a href="/clients">Clients</a></li>
+      <li><a href="/liquidation">Liquidation</a></li>
+      <li><a href="/menu">Menu</a></li>
+      <li><a href="/invoices">Invoices</a></li>
+    </ul>
+    <div class="nav-right">
+      {{#if user}}
+        <span class="user-email">{{user.username}}</span>
+        <form method="POST" action="/auth/logout" style="display:inline"><button type="submit" class="btn btn-link">Sign out</button></form>
+      {{/if}}
+    </div>
+  </div>
+</nav>

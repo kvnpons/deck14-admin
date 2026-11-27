@@ -1,0 +1,52 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Menu catalogue</h1>
+    <div class="actions">
+      <a class="btn btn-secondary" href="/menu/builder">Menu builder</a>
+      <a class="btn btn-secondary" href="/menu/export.pdf">Export PDF</a>
+      <a class="btn btn-primary" href="/menu/new">+ Add item</a>
+    </div>
+  </div>
+
+  {{#each groups}}
+    <section class="card">
+      <div class="card-head">
+        <h2>{{this.label}}</h2>
+        <span class="muted">{{this.items.length}} item(s)</span>
+      </div>
+      {{#if this.items.length}}
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th class="num">Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each this.items}}
+            <tr>
+              <td>{{this.name}}</td>
+              <td>{{this.description}}</td>
+              <td class="num">₱ {{formatMoney this.price}}</td>
+              <td>
+                <a href="/menu/{{this.id}}/edit">Edit</a>
+                <form method="POST" action="/menu/{{this.id}}/delete" style="display:inline" onsubmit="return confirm('Delete this item?')">
+                  <button type="submit" class="btn-icon" title="Delete">×</button>
+                </form>
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      {{else}}
+        <p class="muted">No items in this category yet.</p>
+      {{/if}}
+    </section>
+  {{/each}}
+</main>
+{{> footer}}

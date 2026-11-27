@@ -1,0 +1,145 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+
+  <h1>Dashboard</h1>
+
+  <form method="get" action="/" class="card" style="display:flex;gap:.75rem;align-items:end;flex-wrap:wrap">
+    <label>From <input type="date" name="from" value="{{from}}" required></label>
+    <label>To <input type="date" name="to" value="{{to}}" required></label>
+    <button class="btn" type="submit">Apply</button>
+    <a class="btn btn-link" href="/">Reset</a>
+    <small class="muted">Maximum range: one year.{{#if clamped}} Range was shortened to fit.{{/if}}</small>
+  </form>
+
+  <section class="cards">
+    <div class="card stat">
+      <div class="stat-label">Main Fund</div>
+      <div class="stat-value">₱ {{formatMoney funds.mainFund}}</div>
+      <small class="muted">income − expense − loans − petty cash</small>
+    </div>
+    <div class="card stat">
+      <div class="stat-label">Income</div>
+      <div class="stat-value positive">₱ {{formatMoney funds.income}}</div>
+    </div>
+    <div class="card stat">
+      <div class="stat-label">Expense</div>
+      <div class="stat-value negative">₱ {{formatMoney funds.expense}}</div>
+    </div>
+    <div class="card stat">
+      <div class="stat-label">Outstanding Loans</div>
+      <div class="stat-value">₱ {{formatMoney funds.loans}}</div>
+    </div>
+    <div class="card stat">
+      <div class="stat-label">Petty Cash Out</div>
+      <div class="stat-value">₱ {{formatMoney funds.pettyCash}}</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Top 10 pending bookings (Pending &amp; Confirmed)</h2>
+      <a class="btn btn-link" href="/events?status=PENDING,CONFIRMED">View all</a>
+    </div>
+    {{#if pending.length}}
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th>Event date</th>
+          <th>Pax</th>
+          <th>Ingress</th>
+          <th>Bar open</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pending}}
+          <tr>
+            <td>{{this.clientName}}</td>
+            <td>{{formatDate this.eventDate}}</td>
+            <td>{{this.pax}}</td>
+            <td>{{this.ingressTime}}</td>
+            <td>{{this.barOpenTime}}</td>
+            <td><span class="pill pill-{{this.status}}">{{this.status}}</span></td>
+            <td><a href="/events/{{this.id}}">Open</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No pending bookings.</p>
+    {{/if}}
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>Events over time</h2></div>
+    <div class="chart-box"><canvas id="events-chart"></canvas></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>Income per event</h2></div>
+    <div class="chart-box"><canvas id="income-chart"></canvas></div>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Earnings / loss per event</h2>
+    </div>
+    {{#if eventsPnL.length}}
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Client</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th class="num">Income</th>
+          <th class="num">Expense</th>
+          <th class="num">Net</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each eventsPnL}}
+          <tr>
+            <td><a href="/events/{{this.id}}">{{this.clientName}}</a></td>
+            <td>{{formatDate this.eventDate}}</td>
+            <td><span class="pill pill-{{this.status}}">{{this.status}}</span></td>
+            <td class="num">{{formatMoney this.income}}</td>
+            <td class="num">{{formatMoney this.expense}}</td>
+            <td class="num {{#if (isNegative this.net)}}negative{{else}}positive{{/if}}">
+              <strong>{{formatMoney this.net}}</strong>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><strong>Total</strong></td>
+          <td class="num"><strong>{{formatMoney eventsTotals.income}}</strong></td>
+          <td class="num"><strong>{{formatMoney eventsTotals.expense}}</strong></td>
+          <td class="num"><strong>{{formatMoney eventsTotals.net}}</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+    {{else}}
+      <p class="muted">No events yet.</p>
+    {{/if}}
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script>
+  const data = {{{chartData}}};
+  new Chart(document.getElementById('events-chart'), {
+    type: 'line',
+    data: { labels: data.months, datasets: [{ label: 'Events', data: data.counts, borderColor: '#424242', backgroundColor: 'rgba(66,66,66,0.15)', fill: true, tension: 0.25 }] },
+    options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } }
+  });
+  new Chart(document.getElementById('income-chart'), {
+    type: 'bar',
+    data: { labels: data.labels, datasets: [{ label: 'Income (₱)', data: data.income, backgroundColor: '#2e7d32' }] },
+    options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true } } }
+  });
+</script>
+{{> footer}}

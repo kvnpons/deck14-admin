@@ -1,0 +1,126 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Menu builder</h1>
+    <div class="actions">
+      <a class="btn btn-secondary" href="/menu">Back to catalogue</a>
+    </div>
+  </div>
+
+  <form method="POST" action="/menu/builder/pdf" enctype="multipart/form-data" target="_blank" id="builder-form">
+    <section class="card">
+      <div class="card-head"><h2>Background &amp; style</h2></div>
+      <div class="builder-fields">
+        <label>
+          <span>Background image (optional, defaults to menu-bg.png; PNG/JPG, max 8 MB){{#if hasSavedBackground}} — a custom image is saved; upload to replace it{{/if}}</span>
+          <input type="file" name="background" accept="image/png,image/jpeg" />
+        </label>
+        <label>
+          <span>Font</span>
+          <select name="fontFamily">
+            {{#each fonts}}<option value="{{this.value}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>{{/each}}
+          </select>
+        </label>
+        <label>
+          <span>Heading colour</span>
+          <input type="color" name="accentColor" value="{{defaults.accentColor}}" />
+        </label>
+        <label>
+          <span>Text colour</span>
+          <input type="color" name="textColor" value="{{defaults.textColor}}" />
+        </label>
+        <label>
+          <span>Overlay opacity (image only): <output id="overlay-out">{{defaults.overlayPercent}}</output>%</span>
+          <input type="range" name="overlayOpacity" min="0" max="100" step="1" value="{{defaults.overlayPercent}}"
+                 oninput="document.getElementById('overlay-out').textContent=this.value" />
+        </label>
+      </div>
+      <p class="muted">Without an image, the default menu background is used. The page is A4 and the menu is centred on it.</p>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Cocktails</h2>
+        <span class="muted"><span data-count="cocktails">0</span> selected (choose {{limits.cocktails.min}}–{{limits.cocktails.max}})</span>
+      </div>
+      <div class="pick-grid" data-group="cocktails" data-min="{{limits.cocktails.min}}" data-max="{{limits.cocktails.max}}">
+        {{#each cocktails}}
+          <label class="pick">
+            <input type="checkbox" name="cocktailIds" value="{{this.id}}" {{#if this.checked}}checked{{/if}} />
+            <span>{{this.name}}</span>
+          </label>
+        {{else}}
+          <p class="muted">No cocktails in the catalogue yet.</p>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>Shooters</h2>
+        <span class="muted"><span data-count="shooters">0</span> selected (choose {{limits.shooters.min}}–{{limits.shooters.max}})</span>
+      </div>
+      <div class="pick-grid" data-group="shooters" data-min="{{limits.shooters.min}}" data-max="{{limits.shooters.max}}">
+        {{#each shooters}}
+          <label class="pick">
+            <input type="checkbox" name="shooterIds" value="{{this.id}}" {{#if this.checked}}checked{{/if}} />
+            <span>{{this.name}}</span>
+          </label>
+        {{else}}
+          <p class="muted">No shooters in the catalogue yet.</p>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head"><h2>Assign to event</h2></div>
+      <label>
+        <span>Event (optional — needed only to save this menu to an event)</span>
+        <select name="eventId" id="builder-event">
+          <option value="">— none —</option>
+          {{#each events}}<option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>{{/each}}
+        </select>
+      </label>
+    </section>
+
+    <div class="form-actions">
+      <span class="muted" id="builder-hint"></span>
+      <button type="submit" class="btn btn-secondary" id="builder-save" formaction="/menu/builder/save" formtarget="_self" disabled>Save to event</button>
+      <button type="submit" class="btn btn-primary" id="builder-submit" disabled>Generate PDF</button>
+    </div>
+  </form>
+</main>
+
+<script>
+  (function () {
+    var groups = Array.prototype.slice.call(document.querySelectorAll('[data-group]'));
+    var submit = document.getElementById('builder-submit');
+    var hint = document.getElementById('builder-hint');
+    var save = document.getElementById('builder-save');
+    var eventSel = document.getElementById('builder-event');
+
+    function update() {
+      var problems = [];
+      groups.forEach(function (g) {
+        var name = g.getAttribute('data-group');
+        var min = Number(g.getAttribute('data-min'));
+        var max = Number(g.getAttribute('data-max'));
+        var boxes = g.querySelectorAll('input[type=checkbox]');
+        var n = g.querySelectorAll('input:checked').length;
+        document.querySelector('[data-count="' + name + '"]').textContent = n;
+        // At the cap, lock the remaining boxes.
+        boxes.forEach(function (b) { b.disabled = !b.checked && n >= max; });
+        if (n < min) problems.push('select at least ' + min + ' ' + name);
+      });
+      submit.disabled = problems.length > 0;
+      save.disabled = problems.length > 0 || !eventSel.value;
+      hint.textContent = problems.length ? 'Still need to: ' + problems.join(', ') : '';
+    }
+
+    document.addEventListener('change', update);
+    update();
+  })();
+</script>
+{{> footer}}

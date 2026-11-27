@@ -1,0 +1,77 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>{{client.name}}</h1>
+    <div class="actions">
+      <a class="btn btn-secondary" href="/clients/{{client.id}}/edit">Edit</a>
+      <form method="POST" action="/clients/{{client.id}}/delete" style="display:inline" onsubmit="return confirm('Delete this client?')">
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="card">
+    <dl class="dl-grid">
+      <dt>Mobile</dt><dd>{{#if client.phone}}{{client.phone}}{{else}}<span class="muted">—</span>{{/if}}</dd>
+      <dt>Email</dt><dd>{{#if client.email}}<a href="mailto:{{client.email}}">{{client.email}}</a>{{else}}<span class="muted">—</span>{{/if}}</dd>
+      <dt>Company</dt><dd>{{#if client.company}}{{client.company}}{{else}}<span class="muted">—</span>{{/if}}</dd>
+      <dt>Notes</dt><dd>{{#if client.notes}}{{client.notes}}{{else}}<span class="muted">—</span>{{/if}}</dd>
+    </dl>
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Events ({{client.events.length}})</h2>
+      <a class="btn btn-link" href="/events/new">+ Schedule event</a>
+    </div>
+    {{#if client.events.length}}
+    <table class="data-table">
+      <thead>
+        <tr><th>Date</th><th>Type</th><th>Venue</th><th class="num">Pax</th><th>Payment</th><th>Status</th><th></th></tr>
+      </thead>
+      <tbody>
+        {{#each client.events}}
+          <tr>
+            <td>{{formatDate this.eventDate}}</td>
+            <td>{{this.eventType}}</td>
+            <td style="white-space:pre-line">{{this.venue}}</td>
+            <td class="num">{{this.pax}}</td>
+            <td>{{this.paymentStatus}}</td>
+            <td><span class="pill pill-{{this.status}}">{{this.status}}</span></td>
+            <td><a href="/events/{{this.id}}">Open</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No events linked to this client.</p>
+    {{/if}}
+  </section>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Invoices ({{client.invoices.length}})</h2>
+      <a class="btn btn-link" href="/invoices/new?clientId={{client.id}}">+ New invoice</a>
+    </div>
+    {{#if client.invoices.length}}
+    <table class="data-table">
+      <thead><tr><th>Number</th><th>Date</th><th class="num">Total</th><th></th></tr></thead>
+      <tbody>
+        {{#each client.invoices}}
+          <tr>
+            <td>INV-{{padSerial this.serial}}</td>
+            <td>{{formatDate this.issueDate}}</td>
+            <td class="num">₱ {{formatMoney this.total}}</td>
+            <td><a href="/invoices/{{this.id}}">Open</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No invoices for this client.</p>
+    {{/if}}
+  </section>
+</main>
+{{> footer}}

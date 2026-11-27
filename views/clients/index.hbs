@@ -1,0 +1,42 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Clients</h1>
+    <div class="actions">
+      <a class="btn btn-primary" href="/clients/new">+ New client</a>
+    </div>
+  </div>
+
+  <form method="GET" action="/clients" class="filters">
+    <label>Search:
+      <input type="search" name="q" value="{{q}}" placeholder="Name, email, mobile, company" />
+    </label>
+    <button type="submit" class="btn btn-secondary">Search</button>
+  </form>
+
+  {{#if clients.length}}
+  <table class="data-table">
+    <thead>
+      <tr><th>Name</th><th>Mobile</th><th>Email</th><th>Company</th><th class="num">Events</th><th></th></tr>
+    </thead>
+    <tbody>
+      {{#each clients}}
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.phone}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.company}}</td>
+          <td class="num">{{this._count.events}}</td>
+          <td><a href="/clients/{{this.id}}">Open</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <p class="muted small">{{total}} client(s)</p>
+  {{else}}
+    <p class="muted">No clients found.</p>
+  {{/if}}
+</main>
+{{> footer}}

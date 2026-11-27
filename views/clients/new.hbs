@@ -1,0 +1,14 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <h1>New client</h1>
+  <form method="POST" action="/clients" class="form-card">
+    {{> client-form}}
+    <div class="form-actions">
+      <a class="btn btn-link" href="/clients">Cancel</a>
+      <button type="submit" class="btn btn-primary">Create client</button>
+    </div>
+  </form>
+</main>
+{{> footer}}

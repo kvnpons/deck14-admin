@@ -1,0 +1,121 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="form-center">
+  <h1>{{#if editing}}Edit {{invoice.number}}{{else}}New invoice{{/if}}</h1>
+  {{#unless editing}}<p class="muted">The invoice number is assigned when you save.</p>{{/unless}}
+
+  <form method="POST" action="{{#if editing}}/invoices/{{invoice.id}}{{else}}/invoices{{/if}}" class="form-card form-card-wide" id="invoice-form" data-items="{{json items}}">
+    <label>
+      <span>Client (optional)</span>
+      <select name="clientId" id="client-select">
+        <option value="">— none / walk-in —</option>
+        {{#each clients}}<option value="{{this.id}}" data-name="{{this.name}}" data-company="{{this.company}}" {{#if this.selected}}selected{{/if}}>{{this.name}}{{#if this.company}} ({{this.company}}){{/if}}</option>{{/each}}
+      </select>
+    </label>
+    <label>
+      <span>Customer name</span>
+      <input type="text" name="customerName" id="customer-name" value="{{invoice.customerName}}" required />
+    </label>
+    <label>
+      <span>Company (optional — shown on the invoice if filled in)</span>
+      <input type="text" name="customerCompany" id="customer-company" value="{{invoice.customerCompany}}" />
+    </label>
+    <label>
+      <span>Customer address (optional)</span>
+      <textarea name="customerAddress" rows="2">{{invoice.customerAddress}}</textarea>
+    </label>
+    <label>
+      <span>Date</span>
+      <input type="date" name="issueDate" value="{{today}}" required />
+    </label>
+
+    <table class="data-table line-items">
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th class="col-qty">Qty</th>
+          <th class="col-unit">Amount / unit</th>
+          <th class="col-amt">Amount</th>
+          <th class="col-x"></th>
+        </tr>
+      </thead>
+      <tbody id="items"></tbody>
+    </table>
+    <div><button type="button" class="btn btn-secondary" id="add-row">+ Add line</button></div>
+
+    <div class="invoice-total"><span>Total</span><span>₱ <span id="grand-total">0.00</span></span></div>
+
+    <label>
+      <span>Notes (optional)</span>
+      <textarea name="notes" rows="2">{{invoice.notes}}</textarea>
+    </label>
+    <p class="muted"><em>This invoice is not a tax document.</em></p>
+
+    <div class="form-actions">
+      <a class="btn btn-link" href="{{#if editing}}/invoices/{{invoice.id}}{{else}}/invoices{{/if}}">Cancel</a>
+      <button type="submit" class="btn btn-primary">Save invoice</button>
+    </div>
+  </form>
+  </div>
+</main>
+
+<template id="row-tpl">
+  <tr>
+    <td><textarea name="itemDescription" rows="3" required></textarea></td>
+    <td class="col-qty"><input type="number" name="itemQuantity" min="0.01" step="0.01" value="1" required /></td>
+    <td class="col-unit"><input type="number" name="itemUnitPrice" min="0" step="0.01" required /></td>
+    <td class="col-amt">₱ <span class="row-amt">0.00</span></td>
+    <td class="col-x"><button type="button" class="btn-icon remove-row" title="Remove">×</button></td>
+  </tr>
+</template>
+
+<script>
+  (function () {
+    var body = document.getElementById('items');
+    var tpl = document.getElementById('row-tpl');
+    var fmt = function (n) { return n.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+    function recalc() {
+      var total = 0;
+      body.querySelectorAll('tr').forEach(function (tr) {
+        var q = parseFloat(tr.querySelector('[name=itemQuantity]').value) || 0;
+        var u = parseFloat(tr.querySelector('[name=itemUnitPrice]').value) || 0;
+        var amt = Math.round(q * u * 100) / 100;
+        tr.querySelector('.row-amt').textContent = fmt(amt);
+        total += amt;
+      });
+      document.getElementById('grand-total').textContent = fmt(Math.round(total * 100) / 100);
+    }
+    function addRow(it) {
+      var node = tpl.content.cloneNode(true);
+      if (it && it.description !== undefined) {
+        node.querySelector('[name=itemDescription]').value = it.description;
+        node.querySelector('[name=itemQuantity]').value = it.quantity;
+        node.querySelector('[name=itemUnitPrice]').value = it.unitPrice;
+      }
+      body.appendChild(node);
+      recalc();
+    }
+    document.getElementById('add-row').addEventListener('click', function () { addRow(); });
+    body.addEventListener('input', recalc);
+    body.addEventListener('click', function (e) {
+      if (!e.target.classList.contains('remove-row')) return;
+      if (body.children.length > 1) { e.target.closest('tr').remove(); recalc(); }
+    });
+    var existing = JSON.parse(document.getElementById('invoice-form').dataset.items || '[]');
+    if (existing.length) existing.forEach(addRow); else addRow();
+
+    var select = document.getElementById('client-select');
+    var nameInput = document.getElementById('customer-name');
+    var companyInput = document.getElementById('customer-company');
+    function fillFromClient() {
+      var opt = select.options[select.selectedIndex];
+      if (opt && opt.value) { nameInput.value = opt.getAttribute('data-name'); companyInput.value = opt.getAttribute('data-company') || ''; }
+    }
+    select.addEventListener('change', fillFromClient);
+    if (select.value && !nameInput.value) fillFromClient();
+  })();
+</script>
+{{> footer}}

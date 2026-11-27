@@ -1,0 +1,64 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <h1>Edit event</h1>
+  <form method="POST" action="/events/{{event.id}}" class="form-card">
+    <label>
+      <span>Client name</span>
+      <input type="text" name="clientName" value="{{event.clientName}}" required />
+    </label>
+    <label>
+      <span>Client profile</span>
+      <select name="clientId">
+        <option value="">— none —</option>
+        {{#each clients}}<option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>{{/each}}
+      </select>
+    </label>
+    <label>
+      <span>Event date</span>
+      <input type="date" name="eventDate" value="{{isoDate event.eventDate}}" required />
+    </label>
+    <label>
+      <span>Pax</span>
+      <input type="number" name="pax" min="1" value="{{event.pax}}" required />
+    </label>
+    <label>
+      <span>Bar open time</span>
+      <input type="time" name="barOpenTime" value="{{event.barOpenTime}}" required />
+    </label>
+    <label>
+      <span>Ingress time</span>
+      <input type="time" name="ingressTime" value="{{event.ingressTime}}" required />
+    </label>
+    <label>
+      <span>Event address</span>
+      <textarea name="venue" rows="2" required>{{event.venue}}</textarea>
+    </label>
+    <label>
+      <span>Contact name</span>
+      <input type="text" name="contactName" value="{{event.contactName}}" required />
+    </label>
+    <label>
+      <span>Contact number</span>
+      <input type="tel" name="contactPhone" value="{{event.contactPhone}}" required />
+    </label>
+    <label>
+      <span>Status</span>
+      <select name="status">
+        {{#each statuses}}
+          <option value="{{this}}" {{#if (eq this ../event.status)}}selected{{/if}}>{{this}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>
+      <span>Notes</span>
+      <textarea name="notes" rows="3">{{event.notes}}</textarea>
+    </label>
+    <div class="form-actions">
+      <a class="btn btn-link" href="/events/{{event.id}}">Cancel</a>
+      <button type="submit" class="btn btn-primary">Save changes</button>
+    </div>
+  </form>
+</main>
+{{> footer}}

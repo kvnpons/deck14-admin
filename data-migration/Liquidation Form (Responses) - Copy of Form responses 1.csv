@@ -1,0 +1,908 @@
+Timestamp,Transaction type,Description,Amount,Event Code,Petty Cash User
+17/09/2022 10:25:42,Income,Ms. Shelley Balance,"6,350.00",09172022,
+18/09/2022 00:26:46,Expense,Payroll angelo,600.00,09172022,
+18/09/2022 14:41:51,Expense,Rfid transpo,510.00,09172022,
+18/09/2022 14:42:50,Expense,Gas transpo ,800.00,09172022,
+18/09/2022 14:48:32,Expense,Receipt liquor,"1,226.55",09172022,
+18/09/2022 14:50:32,Expense,Receipt juice,449.45,09172022,
+18/09/2022 15:18:18,Income,Tips,"1,600.00",09172022,
+18/09/2022 23:01:58,Expense,Additional Liquor And Juice,348.00,09172022,
+18/09/2022 23:03:11,Income,Ms. Shelley Downpayment,"6,350.00",09172022,
+18/09/2022 23:06:40,Expense,"Shoppee games 3x Ring toss, Drunken tower, Shots roullete",995.00,09172022,
+18/09/2022 23:08:00,Expense,Shoppee test tube glass,"1,459.00",09172022,
+18/09/2022 23:08:45,Expense,PJ Payroll,"1,000.00",09172022,
+18/09/2022 23:22:00,Expense,Receipt juice and spirit ,239.00,09172022,
+,,,,,
+18/09/2022 23:34:36,Income,Ice and Sting,195.00,09172022,
+20/09/2022 06:57:33,Income,Bigcat Solutions Inc.Dp,"4,450.00",09232022,
+22/09/2022 16:37:36,Expense,Spirit and cordials ,"1,307.20",09232022,
+22/09/2022 16:39:31,Expense,Fruits and garnish ,916.95,09232022,
+23/09/2022 18:07:39,Expense,"Ice, Cobra ",500.00,09232022,
+24/09/2022 00:30:46,Expense,Additional ice,100.00,09232022,
+24/09/2022 00:31:25,Income,Balance,"4,500.00",09232022,
+24/09/2022 02:13:10,Expense,Gas L300,800.00,09232022,
+24/09/2022 02:14:19,Expense,Rfid ,500.00,09232022,
+24/09/2022 02:17:09,Expense,Payroll,500.00,09232022,
+24/09/2022 02:20:41,Expense,Payroll ,500.00,09232022,
+25/09/2022 02:18:36,Expense,"Transfer fees: UB to gcash, gcash to autosweep",20.00,09232022,
+02/10/2022 11:34:51,Income,Downpayment,"9,000.00",10082022,
+02/10/2022 17:34:21,Expense,Red horse in can 2box ,"2,400.00",10082022,
+02/10/2022 17:35:41,Expense,Spirits and cordials ,"2,626.00",10082022,
+02/10/2022 18:26:11,Expense,Juice and fruits ,722.40,10082022,
+02/10/2022 21:16:43,Expense,Parking fee ,70.00,10082022,
+08/10/2022 17:01:47,Expense,Gas ,"1,000.00",10082022,
+08/10/2022 19:11:22,Expense,Rfid ,510.00,10082022,
+08/10/2022 19:12:19,Expense,Transfer fee,10.00,10082022,
+08/10/2022 19:13:51,Expense,Ice ,120.00,10082022,
+08/10/2022 19:16:20,Expense,Additional spirit and crew food,801.00,10082022,
+08/10/2022 19:21:52,Expense,Crew expense ,84.00,10082022,
+09/10/2022 00:43:48,Income,Balance ,"7,500.00",10082022,
+09/10/2022 00:44:37,Income,Tips,"1,500.00",10082022,
+09/10/2022 00:45:12,Expense,Ice,75.00,10082022,
+09/10/2022 00:45:50,Expense,Ice,150.00,10082022,
+09/10/2022 00:46:30,Expense,Ice,200.00,10082022,
+09/10/2022 00:47:05,Expense,Ice,50.00,10082022,
+09/10/2022 00:48:12,Expense,Ice,100.00,10082022,
+09/10/2022 00:50:49,Expense,Ken payroll,700.00,10082022,
+09/10/2022 00:51:53,Expense,Jack payroll,700.00,10082022,
+09/10/2022 02:05:04,Income,Ms. Shyne Full Payment,"9,100.00",10102022,
+09/10/2022 04:20:26,Expense,Crew welfare ,467.00,10082022,
+09/10/2022 16:03:54,Income,Extension ,"1,500.00",10082022,
+09/10/2022 16:06:44,Expense,Payroll pj ,"1,500.00",10082022,
+09/10/2022 16:10:15,Expense,Plastic cups ,845.00,10102022,
+09/10/2022 16:11:55,Expense,Spirits and cordial ,"2,547.50",10102022,
+09/10/2022 16:13:53,Expense,Juices and fruits ,"1,104.60",10102022,
+09/10/2022 16:14:50,Expense,Additional spirits ,533.50,10102022,
+11/10/2022 09:07:21,Expense,Parking & gate fee,120.00,10102022,
+11/10/2022 09:08:02,Expense,Ken Payroll,500.00,10102022,
+11/10/2022 09:08:28,Expense,Gas & Toll,"1,000.00",10102022,
+11/10/2022 09:09:01,Expense,Ice and cobra,210.00,10102022,
+11/10/2022 09:11:36,Expense,Crew after event food,620.00,10102022,
+21/10/2022 09:58:21,Petty Cash Assign,Loan PJ,"3,000.00",,PJ
+31/10/2022 13:01:08,Income,Downpayment ,"13,200.00",12102022,
+02/11/2022 08:53:18,Expense,Custom Cups 500pcs 12oz Pet dabba (Half dp),"1,285.00",,
+08/11/2022 12:27:01,Petty Cash Assign,Loan PJ,"2,000.00",,PJ
+10/11/2022 13:06:10,Expense,Payment printed cups,"1,285.00",,
+11/11/2022 08:44:22,Income,Downpayment ,"1,500.00",01032023,
+14/11/2022 12:11:15,Expense,Outing,"7,000.00",,
+18/11/2022 12:07:49,Income,Downpayment,"8,250.00",12022022,
+18/11/2022 12:08:13,Income,Downpayment,"3,000.00",12092022,
+18/11/2022 12:10:31,Expense,Payroll Kevin,"4,000.00",,
+18/11/2022 12:11:04,Petty Cash Assign,Loan Kevin,"4,000.00",,Kevin
+23/11/2022 10:29:25,Petty Cash Assign,Loan PJ,"1,500.00",,PJ
+25/11/2022 18:33:08,Income,Down payment ,"2,000.00",11292022,
+26/11/2022 12:09:26,Income,Down payment ,"4,500.00",12032022,
+27/11/2022 17:41:40,Expense,Loan PJ,"1,000.00",,
+28/11/2022 14:40:13,Income,Half dp: Delloite,"7,000.00",12162022,
+29/11/2022 15:26:29,Expense,500pcs Cups dp,"1,000.00",,
+29/11/2022 15:27:52,Expense,"Alcohol, Garnish, Juice","1,651.00",11292022,
+29/11/2022 15:29:21,Expense,"Alcohol, Juice, Garnish 2x jack","4,500.00",12022022,
+29/11/2022 15:30:18,Expense,"Alcohol, Juice ","1,360.00",12032022,
+30/11/2022 00:23:51,Expense,Reinhard event,620.00,11292022,
+30/11/2022 18:46:28,Income,Full payment,"3,150.00",11292022,
+30/11/2022 18:46:55,Expense,Angelo Payroll,600.00,11292022,
+02/12/2022 09:47:09,Expense,Payment Dave domdom,"2,500.00",12022022,
+02/12/2022 23:32:48,Expense,Additional expense david,"2,441.27",12022022,
+02/12/2022 23:33:51,Expense,Rfid avanza,510.00,12022022,
+03/12/2022 07:21:09,Expense,Team budget,"1,515.00",12032022,
+03/12/2022 07:27:31,Expense,Ken - Payroll,600.00,12022022,
+04/12/2022 02:53:30,Income,Downpayment ,"4,500.00",12032022,
+04/12/2022 15:34:26,Expense,Additional expenses and sahod ,"1,004.25",12032022,
+06/12/2022 13:06:29,Income,Downpayment ,"9,750.00",12022022,
+08/12/2022 18:44:26,Expense,Budget ,"4,947.00",12092022,
+08/12/2022 18:45:15,Expense,Budget,"1,500.00",12102022,
+08/12/2022 19:01:29,Expense,Spirit and cordials ,"2,446.40",12102022,
+09/12/2022 18:58:31,Income,Down payment ,"4,600.00",12092022,
+10/12/2022 10:11:25,Expense,Full payment custom cups 500pcs,"1,000.00",,
+10/12/2022 19:20:51,Expense,Additional budget,"2,000.00",12102022,
+11/12/2022 13:58:12,Expense,Additional expenses ,256.00,12092022,
+11/12/2022 14:13:22,Expense,Payroll and additional expenses ,"4,905.75",12102022,
+11/12/2022 14:16:12,Income,Downpayment ,"18,200.00",12102022,
+12/12/2022 12:19:37,Income,Tip ,"2,500.00",12102022,
+13/12/2022 17:12:31,Income,Fullpayment ,"10,000.00",12192022,
+17/12/2022 02:51:53,Expense,Gas and toll,"1,800.00",12162022,
+17/12/2022 02:54:49,Expense,Addtl,255.00,12162022,
+17/12/2022 02:55:09,Expense,Ken Payroll,600.00,12162022,
+17/12/2022 09:23:50,Expense,Laundry ,159.00,12162022,
+17/12/2022 09:34:43,Expense,"Additional (spirit,ice,fruits,water)",860.00,12162022,
+17/12/2022 09:36:09,Expense,Parking fee,200.00,12162022,
+17/12/2022 09:39:55,Expense,Spirits and cordials ,"2,414.50",12162022,
+17/12/2022 09:42:28,Expense,Fruits and juices ,"2,732.55",12162022,
+17/12/2022 09:45:03,Expense,Spirits and cordials ,"1,764.50",12172022,
+17/12/2022 10:06:19,Income,Down payment,"6,000.00",12172022,
+18/12/2022 10:53:05,Income,Payment balance ,"7,500.00",12172022,
+18/12/2022 10:56:43,Expense,Addition expense etc.,"4,378.00",12172022,
+18/12/2022 13:02:11,Income,Full payment,"7,000.00",12162022,
+18/12/2022 17:42:14,Expense,Parking fee ,80.00,12192022,
+18/12/2022 17:43:43,Expense,Spirits and cordials ,"1,709.00",12192022,
+18/12/2022 17:45:19,Expense,Fruits and garnish ,569.70,12192022,
+18/12/2022 17:46:11,Expense,Additional spirits ,218.00,12192022,
+18/12/2022 18:01:51,Expense,Christmas packs ,"2,196.00",,
+18/12/2022 22:48:25,Expense,Gas ,"1,000.00",12192022,
+19/12/2022 23:40:14,Income,Tip,"3,000.00",12192022,
+19/12/2022 23:43:10,Expense,Payroll ken ,"1,000.00",12192022,
+22/12/2022 11:20:27,Expense,Bonus crew,"5,000.00",,
+22/12/2022 11:21:13,Expense,Christmas party ,"9,900.00",,
+29/12/2022 12:19:30,Income,Downpayment ,"2,000.00",01032023,
+29/12/2022 12:56:06,Income,Ate Lou DP,"8,500.00",06042023,
+30/12/2022 17:37:36,Expense,Payroll pj ,"3,000.00",,
+03/01/2023 20:00:39,Income,Balance Payment Ayla,"3,500.00",01032023,
+03/01/2023 20:01:21,Expense,Jhamire,700.00,01032023,
+03/01/2023 20:01:57,Expense,Gas PJ,500.00,01032023,
+03/01/2023 21:50:57,Expense,Crew meal ,500.00,,
+08/01/2023 20:20:44,Expense,"Mobile bar repair (materiales,labor,food)","5,685.00",,
+11/01/2023 11:25:23,Income,Marco DP,"3,400.00",02112023,
+12/01/2023 09:07:24,Expense,Bar renovation,"4,325.00",,
+12/01/2023 09:07:58,Petty Cash Assign,Loan PJ,"3,000.00",,PJ
+,,,,,
+12/01/2023 09:25:28,Expense,Kevin Gas Ate Neng,1000,12192022,
+12/01/2023 09:26:40,Expense,Additional Ice / others ate neng,450,12192022,
+20/01/2023 21:31:53,Income,Down payment ,3750,01272023,
+28/01/2023 10:48:48,Income,Balance Payment Micah,5250,01272023,
+28/01/2023 10:50:25,Expense,"UP town (Tequila, Rum)",515,01272023,
+28/01/2023 10:52:06,Expense,Treats: Ice and Corned Beef Buns,390,01272023,
+28/01/2023 10:54:06,Expense,Landmark: Strainer,89,01272023,
+28/01/2023 10:59:10,Income,"Landmark Grocery: Garnish, Coffee etc. - Less gum tech",828,01272023,
+28/01/2023 10:59:56,Expense,Landmark: Liquor,1667.9,01272023,
+28/01/2023 11:00:27,Expense,Toll,500,01272023,
+28/01/2023 11:01:42,Expense,Gas,1000,01272023,
+28/01/2023 11:04:35,Expense,(Morning: Cobra & others) (Evening: Redhorse & others),470,01272023,
+28/01/2023 18:43:33,Income,Extension,1800,01272023,
+30/01/2023 13:32:20,Expense,Ken payroll ,600,01272023,
+30/01/2023 13:33:32,Expense,Pj payroll,1000,01272023,
+11/02/2023 20:53:51,Income,Fullpayment ,3000,02112023,
+11/02/2023 20:55:27,Expense,Payroll Ken and Anjelo ,1000,02112023,
+11/02/2023 20:56:36,Expense,Gas avanza ,500,02112023,
+11/02/2023 20:59:43,Expense,Ice and water etc. ,315,02112023,
+11/02/2023 22:31:29,Expense,Liquor,636,02112023,
+11/02/2023 22:35:12,Expense,"Garnish, Pineapple juice, Sprite ",708,02112023,
+11/02/2023 22:36:12,Expense,Tequila Mightee Mart,240,02112023,
+11/02/2023 22:36:45,Expense,Landmark Parking,40,02112023,
+11/02/2023 22:49:29,Expense,PJ payroll,1000,02112023,
+11/02/2023 23:11:32,Petty Cash Assign,Petty Cash Assigned to PJ as remaining balance from event,1185,02112023,PJ
+20/02/2023 09:15:36,Expense,Cups restock 500pcs DP,1000,,
+02/03/2023 13:31:55,Expense,Balance payment and lalamove delivery for cups,1040,,
+23/03/2023 09:24:26,Petty Cash Assign,Loan PJ,5000,,PJ
+03/04/2023 10:19:13,Income,DP April 23 event,5100,04232023,
+03/04/2023 10:27:15,Income,Downpayment,10000,04222023,
+14/04/2023 19:33:34,Income,Full payment,7000,04222023,
+16/04/2023 16:07:08,Expense,April 22 - Liquor,2500,04222023,
+16/04/2023 16:07:56,Expense,April 23 - Liquor,1684,04232023,
+16/04/2023 16:09:26,Expense,April 22- Juice & Soda,1000,04222023,
+16/04/2023 16:10:17,Expense,April 23 - Juice & Soda,573,04232023,
+16/04/2023 16:10:52,Expense,Parking,50,04232023,
+19/04/2023 14:05:56,Petty Cash Assign,PJ Loan,2000,,PJ
+22/04/2023 23:59:17,Petty Cash Expense,Crew Meal,852,04222023,PJ
+23/04/2023 00:00:15,Petty Cash Expense,Fruits & Ice,685.5,04222023,PJ
+23/04/2023 00:00:41,Petty Cash Expense,Parking,34,04222023,PJ
+23/04/2023 00:02:24,Expense,Gas & Toll,3000,04222023,
+23/04/2023 00:03:11,Expense,S&R Membership,700,04222023,
+23/04/2023 10:53:17,Expense,Business Card,700,,
+,,,,,
+,,,,,
+24/04/2023 17:14:50,Expense,Ice,309,04232023,
+24/04/2023 17:17:32,Expense,Cobra and Fruits,488,04232023,
+24/04/2023 17:18:30,Expense,Pao Tsin - Crew Meals,428,04232023,
+24/04/2023 17:20:20,Expense,Ken & Jack Payroll,1100,04232023,
+24/04/2023 17:20:46,Petty Cash Assign,PJ Loan,3500,04232023,PJ
+24/04/2023 17:21:27,Expense,PJ - Payroll,2000,04232023,
+24/04/2023 17:22:36,Expense,Ralf & Ken Payroll,1200,04222023,
+24/04/2023 22:39:34,Income,Balance payment,5100,04232023,
+27/04/2023 14:59:15,Petty Cash Assign,PJ Loan,1000,,PJ
+27/04/2023 14:59:53,Expense,Crew - Drinks (red horse),500,,
+27/04/2023 15:00:15,Expense,Kevin - Payroll,2000,,
+30/04/2023 17:08:33,Income,Fullpayment ,10000,05072023,
+07/05/2023 07:30:59,Petty Cash Assign,"Event Budget (gas 800, toll 500, crew meal 400, ice 300)",2000,,PJ
+07/05/2023 23:24:06,Expense,Liquor,1739,05072023,
+07/05/2023 23:24:53,Expense,"Fruits, Soda and Juice",690,05072023,
+08/05/2023 10:45:12,Petty Cash Expense,"Food,gas,ice and drinks",2000,05072023,PJ
+08/05/2023 11:07:12,Income,Tip,2000,05072023,
+08/05/2023 11:07:49,Petty Cash Assign,Tip petty cash assign ,2000,04072023,PJ
+08/05/2023 11:08:31,Petty Cash Expense,"PJ Payroll, Tip Distribution",2000,05072023,PJ
+08/05/2023 13:59:29,Expense,Jack & Anjelo Payroll,1600,05072023,
+13/05/2023 18:41:59,Petty Cash Assign,PJ Loan,2000,,PJ
+29/05/2023 09:34:02,Income,Dp for Janine,2500,06032023,
+29/05/2023 09:34:51,Petty Cash Assign,PJ Loan,3000,,PJ
+29/05/2023 09:35:44,Expense,Liquor for ate lou,2479,06042023,
+29/05/2023 09:36:48,Expense,Liquor for Janine,1781,06032023,
+29/05/2023 09:37:38,Expense,Janine Juice and Garnish,480,06032023,
+29/05/2023 09:38:57,Expense,Ate lou juice and garnish,2000,06042023,
+03/06/2023 22:28:55,Petty Cash Assign,Janine Balance,2500,06032023,PJ
+03/06/2023 22:31:21,Petty Cash Expense,Ice Yosi,350,06032023,PJ
+03/06/2023 22:32:38,Petty Cash Expense,Jhamire & Ken Payroll,1100,06032023,PJ
+03/06/2023 22:54:53,Petty Cash Expense,Redhorse,460,06032023,PJ
+04/06/2023 16:29:32,Petty Cash Expense,Gas,1000,06042023,PJ
+04/06/2023 16:30:30,Petty Cash Expense,"Food, Ice, fruits, water expense",796.41,06042023,PJ
+04/06/2023 21:17:02,Petty Cash Assign,Stock budget for ate lou,500,06042023,PJ
+05/06/2023 01:16:35,Petty Cash Assign,Balance payment and tip,10000,06042023,PJ
+05/06/2023 01:20:59,Petty Cash Expense,"Combined : Sprite, Marlboro, Pineapple Juice, Ice, Water, food",807,06042023,PJ
+05/06/2023 01:22:14,Petty Cash Expense,Payroll Anjelo and Ralf,1200,06042023,PJ
+11/06/2023 15:22:40,Petty Cash Expense,Pj payroll,2000,,PJ
+19/06/2023 18:05:18,Petty Cash Assign,Payment,3000,06232023,PJ
+19/06/2023 18:08:07,Income,Payment,3000,06232023,
+22/06/2023 08:51:03,Petty Cash Expense,Alcohol,2269.5,06232023,PJ
+22/06/2023 08:51:51,Petty Cash Expense,Rfid,200,06232023,PJ
+22/06/2023 08:53:13,Petty Cash Expense,Juice and fruits,975,06232023,PJ
+22/06/2023 08:55:46,Petty Cash Expense,Parking fee,40,06232023,PJ
+23/06/2023 18:39:15,Petty Cash Expense,Payroll jhamire ,600,06232023,PJ
+23/06/2023 18:40:15,Petty Cash Expense,"Ice,water and etc.",400,06232023,PJ
+29/06/2023 10:51:27,Expense,Cups re print 500pcs dp,1000,,
+03/07/2023 11:45:09,Income,August 8 DP,5000,08082023,
+09/07/2023 17:12:03,Income,Black List Full Payment,10000,07222022,
+10/07/2023 11:09:45,Petty Cash Assign,Loan + Service Charge,3010,,PJ
+11/07/2023 08:19:57,Income,Down payment July 21,3500,07212023,
+11/07/2023 13:53:55,Expense,Cups + Lalamove,1024,,
+11/07/2023 14:14:38,Expense,2x Cocktail Table,3600,,
+11/07/2023 16:43:52,Expense,Lalamove cocktail tables,925,,
+18/07/2023 21:01:19,Petty Cash Expense,Parking fee,80,,PJ
+18/07/2023 21:03:42,Petty Cash Expense,Soda and juice ,627,07222023,PJ
+21/07/2023 11:42:50,Expense,Liquor For July 21,1700,07212023,
+21/07/2023 11:43:45,Expense,Liquor for July 22,2310,07222023,
+21/07/2023 11:45:58,Petty Cash Assign,Cash allowance for July 21 + Charge,1955,,PJ
+22/07/2023 08:00:21,Expense,logo repair + parking fee,706,,
+22/07/2023 08:02:31,Income,Balance payment ms. kim,5000,07212022,PJ
+22/07/2023 08:03:11,Petty Cash Assign,Budget for ohmyvenus,5000,,PJ
+22/07/2023 08:42:12,Petty Cash Expense,Ice and cobra ,180,07212023,PJ
+22/07/2023 08:46:45,Petty Cash Expense,Fruits and juice ,749.3,07212023,PJ
+22/07/2023 08:48:38,Petty Cash Expense,Crew meal and parking fee,464,07212023,PJ
+22/07/2023 08:49:47,Petty Cash Expense,Gas avanza,500,07212023,PJ
+23/07/2023 15:02:43,Petty Cash Expense,Payroll Ralf ,600,07212023,PJ
+23/07/2023 15:05:45,Income,Payment for additional hours,4500,07222023,
+23/07/2023 15:07:26,Petty Cash Assign,Budget,4500,,PJ
+23/07/2023 15:16:20,Petty Cash Expense,Juice and fruits ,771,07222023,PJ
+23/07/2023 15:17:32,Petty Cash Expense,Gas avanza ,1000,07222023,PJ
+23/07/2023 15:19:01,Petty Cash Expense,Crew meal lunch,432,07222023,PJ
+23/07/2023 15:20:24,Petty Cash Expense,Mint leaves ,84,07222023,PJ
+23/07/2023 15:24:10,Petty Cash Expense,Ice and parking etc. ,925,07222023,PJ
+23/07/2023 15:25:19,Petty Cash Expense,Rfid avanza,500,07222023,PJ
+23/07/2023 15:26:19,Petty Cash Expense,Crew meal midnight snacks ,710,07222023,PJ
+23/07/2023 15:29:00,Petty Cash Expense,"Payroll ken,Angelo,Ralf ",2200,07222023,PJ
+25/07/2023 19:46:22,Expense,Kevin Payroll ,2000,,
+25/07/2023 19:48:25,Income,Full payment,8500,07282023,
+26/07/2023 11:28:45,Petty Cash Assign,Additional fund,1000,,PJ
+27/07/2023 18:37:57,Petty Cash Expense,Parking fee,40,07282023,PJ
+27/07/2023 18:45:03,Petty Cash Expense,Inventory july 28,2109,07282023,PJ
+27/07/2023 18:45:51,Expense,"Juice, Cola, Sprite",684,07282023,
+27/07/2023 18:46:47,Expense,Long glass for shaker,130,07282023,
+29/07/2023 03:57:08,Petty Cash Expense,Ice and soda etc. ,426,07282023,PJ
+29/07/2023 11:36:21,Petty Cash Expense,Pj Payroll 07222023 and 07282023,2000,,PJ
+29/07/2023 16:10:41,Expense,Payroll Ken and Jhamire,1200,07282023,
+29/07/2023 16:11:29,Expense,PJ Payroll,1000,07212023,
+29/07/2023 19:40:57,Petty Cash Assign,PJ loan,500,,PJ
+31/07/2023 16:41:08,Expense,"Disposable Shot Glass, Table Cloth,  Lalamove",2423,,
+03/08/2023 23:48:05,Expense,08052023 inventory,5626,08052023,
+03/08/2023 23:50:57,Petty Cash Expense,Food expo entrance ,200,,PJ
+03/08/2023 23:54:18,Expense,Convention cost ,1750,,
+04/08/2023 03:18:19,Petty Cash Assign,Budget assignment for august 5,2025,,PJ
+04/08/2023 03:18:39,Expense,Transaction fees,35,,
+05/08/2023 15:17:17,Petty Cash Assign,Pettycash assign ,1500,08052023,PJ
+05/08/2023 15:18:38,Petty Cash Expense,Gas avanza ,500,08052023,PJ
+05/08/2023 15:20:10,Petty Cash Expense,Parking fee,40,08052023,PJ
+05/08/2023 15:22:28,Petty Cash Expense,Juice and soda ,834,08052023,PJ
+05/08/2023 15:24:02,Petty Cash Expense,Spirit and beers ,1777.75,08052023,PJ
+06/08/2023 02:55:26,Petty Cash Expense,Ice and etc.,449,08052023,PJ
+06/08/2023 02:56:33,Petty Cash Expense,Payroll Angelo and ken,1500,08052023,PJ
+06/08/2023 02:59:23,Petty Cash Expense,Gas and toll,570,08052023,PJ
+06/08/2023 17:05:30,Income,Balance payment 08052023,17000,08052023,
+06/08/2023 17:07:14,Petty Cash Assign,Pettycash assign ,17000,,PJ
+06/08/2023 17:09:15,Petty Cash Expense,Payroll pj ,1500,08052023,PJ
+07/08/2023 18:18:09,Petty Cash Expense,"Change oil avanza (Labor,filter,oil)",1371.92,,PJ
+07/08/2023 18:31:01,Petty Cash Expense,Car wash avanza ,150,,PJ
+07/08/2023 18:34:06,Petty Cash Expense,Food/lunch pack ,500,08052023,PJ
+10/08/2023 10:20:06,Income,06082024 - Dp Payment,9250,06082024,
+18/08/2023 20:31:11,Expense,Jen Borrowed Money,1500,,
+18/08/2023 20:31:26,Expense,Renz Abuloy,1000,,
+18/08/2023 20:32:06,Expense,Company Meeting Drinks,1000,,
+18/08/2023 20:33:05,Expense,Kevin Payroll 2 events,2000,,
+21/08/2023 17:16:28,Income,Fullpayment reinhard ,4000,08192023,
+21/08/2023 17:17:35,Petty Cash Assign,Pettycash ,4000,08192023,PJ
+21/08/2023 17:19:26,Petty Cash Expense,"Ice,coke,sprite etc.",550,08192023,PJ
+21/08/2023 17:20:48,Petty Cash Expense,Gas and rfid ,1350,08192023,PJ
+21/08/2023 17:22:40,Petty Cash Expense,Ken payroll,800,08192023,PJ
+21/08/2023 17:27:43,Petty Cash Expense,Payroll pj,1000,08192023,PJ
+31/08/2023 12:25:00,Expense,Pj load goextra 99,99,,
+01/09/2023 14:50:35,Expense,Riza - Refund,2500,,
+02/09/2023 12:17:29,Income,09082023 - Dp,3750,09082023,
+04/09/2023 21:41:16,Expense,PJ Load,99,,
+06/09/2023 15:33:31,Petty Cash Assign,Cash allowance for sept 8,2700,09082023,PJ
+07/09/2023 10:40:37,Petty Cash Expense,Parking,40,09082023,PJ
+07/09/2023 10:42:19,Petty Cash Expense,Fruits ans Juice,531.31,09082023,PJ
+07/09/2023 10:43:21,Petty Cash Expense,Spirits,2422.25,09082023,PJ
+08/09/2023 21:10:50,Expense,Yelo cobra,601,09082023,
+09/09/2023 10:34:47,Petty Cash Expense,Additional juice and soda ,330,09082023,PJ
+09/09/2023 10:36:09,Petty Cash Expense,Gas avanza ,300,09082023,PJ
+09/09/2023 10:42:32,Petty Cash Expense,Payroll ken and Ralf ,1500,09082023,PJ
+09/09/2023 10:43:23,Petty Cash Expense,Payroll pj ,1000,09082023,PJ
+09/09/2023 10:46:11,Income,09082023-fullpayment ,3750,09082023,
+09/09/2023 10:49:05,Petty Cash Assign,Budget ,3750,,PJ
+17/09/2023 15:13:01,Income,11302023 - dp,7100,11302023,
+06/10/2023 10:16:13,Petty Cash Assign,PJ Loan,1000,,PJ
+08/10/2023 14:33:58,Petty Cash Assign,PJ loan,1000,,PJ
+14/11/2023 19:12:17,Petty Cash Assign,PJ loan,500,,PJ
+21/11/2023 16:26:01,Expense,Cups dp,1000,,
+21/11/2023 17:25:35,Income,Ms. Case DP,3000,11242023,
+21/11/2023 17:26:23,Income,Ms. Meryl DP,7500,02182024,
+21/11/2023 17:27:00,Petty Cash Assign,Ms. Cais Grocery Budget,1500,,PJ
+23/11/2023 14:30:32,Petty Cash Assign,Loan,500,,PJ
+23/11/2023 15:35:11,Petty Cash Expense,Alcohol 11242023,1714,11242023,PJ
+23/11/2023 15:37:02,Petty Cash Expense,Juice and soda 11242023,723,11242023,PJ
+23/11/2023 15:38:15,Petty Cash Expense,Vulcanize avanza and parking fee,250,11242023,PJ
+24/11/2023 15:34:32,Expense,"RFID Nov 24, 30 ",500,,
+25/11/2023 01:01:31,Petty Cash Expense,Gas avanza ,1000,11242023,PJ
+25/11/2023 01:04:11,Petty Cash Expense,"Soda and ice, etc.",710,11242023,PJ
+25/11/2023 01:22:13,Expense,Payroll Ken and Ralf,1200,11242023,
+25/11/2023 23:04:26,Income,Fullpayment 11242023,3000,11242023,
+25/11/2023 23:40:39,Expense,PJ payroll,1000,,
+26/11/2023 09:50:08,Petty Cash Assign,PJ Loan,1000,,PJ
+26/11/2023 10:34:23,Petty Cash Assign,Additional advance,200,,PJ
+26/11/2023 10:34:40,Petty Cash Expense,Kevin - Payroll,1000,,Kevin
+27/11/2023 19:47:42,Expense,11302023 - stock,2224.75,11302023,
+27/11/2023 20:09:27,Expense,11302023 - inventory,860,11302023,
+27/11/2023 20:33:51,Petty Cash Assign,PJ Loan,500,,PJ
+29/11/2023 21:42:13,Petty Cash Assign,Budget - 11302023,6000,,PJ
+30/11/2023 13:13:39,Petty Cash Assign,Budget - 11302023,2000,,PJ
+30/11/2023 20:12:19,Expense,12012023 - stock,11457,12012023,
+30/11/2023 20:33:29,Expense,fruits and soda,886,12012023,
+01/12/2023 09:15:49,Petty Cash Expense,Ice and etc.,535,,PJ
+01/12/2023 09:19:28,Expense,Payroll Ken and ralf ,1200,11302023,
+01/12/2023 09:55:11,Petty Cash Expense,Gas avanza ,500,11302023,PJ
+01/12/2023 10:35:57,Petty Cash Expense,"Fruits,juice,additional beer etc.",5422,11302023,PJ
+01/12/2023 10:39:40,Income,Fullpayment 11302023,14450,11302023,
+01/12/2023 13:56:03,Income,DP - 12012022,15000,12012023,
+01/12/2023 13:57:15,Expense,Additional pineapple Juice,315,12012023,
+01/12/2023 14:01:41,Petty Cash Expense,Kevin - Payroll,1000,12012023,Kevin
+02/12/2023 01:26:41,Petty Cash Expense,Ice tubes and avanza gas,910,,PJ
+04/12/2023 14:10:39,Expense,Ken and Ralf Payroll,1400,12012023,
+05/12/2023 09:26:54,Expense,11302023 & 12012023 Pj payroll,2000,,
+05/12/2023 09:27:26,Petty Cash Assign,PJ loan,3000,,PJ
+05/12/2023 09:28:55,Petty Cash Expense,Kevin Payroll - 12012023,1000,,
+05/12/2023 12:37:40,Petty Cash Assign,PJ Loan,1000,,PJ
+06/12/2023 10:58:33,Income,Fullpayment ,13000,12182023,
+07/12/2023 11:36:26,Income,Balance Payment,15200,12012023,
+07/12/2023 11:36:47,Expense,David Commission,3000,12012023,
+08/12/2023 17:42:45,Petty Cash Assign,PJ Loan ,4000,,PJ
+11/12/2023 13:07:04,Petty Cash Assign,PJ Loan,2175,,PJ
+12/12/2023 17:52:47,Petty Cash Assign,Boss manny share - Kevin,1000,,Kevin
+12/12/2023 17:53:10,Petty Cash Assign,Boss manny share - PJ,1500,,PJ
+13/12/2023 18:20:43,Petty Cash Assign,"Budget for Dec 15, 16",8000,,PJ
+14/12/2023 13:29:28,Petty Cash Expense,"Spirit,soda,fruits etc.",2625.25,12152023,PJ
+14/12/2023 13:30:45,Petty Cash Expense,"Spirits,soda,fruits etc.",2625.25,12162023,PJ
+16/12/2023 03:30:31,Petty Cash Expense,"Water,ice, crew welfare.",580,12152023,PJ
+16/12/2023 03:36:42,Petty Cash Expense,Payroll  nicos and Ken ,1250,12152023,PJ
+16/12/2023 03:40:41,Petty Cash Expense,Avanza gas ,500,12152023,PJ
+16/12/2023 03:47:03,Petty Cash Expense,Rfid avanza ,500,12152023,PJ
+16/12/2023 11:52:30,Petty Cash Assign,Temporary loan - Kevin,10000,,Kevin
+16/12/2023 14:06:14,Income,Balance Payment - Bigcat,3900,12152023,
+16/12/2023 14:06:42,Petty Cash Assign,Budget - Agdangan,3900,,PJ
+16/12/2023 15:09:41,Income,Dp - Canlubang,5000,12162023,
+17/12/2023 01:23:14,Petty Cash Expense,Trolley and Extension,1808,,Kevin
+17/12/2023 00:06:03,Petty Cash Return,Returned all loan 12000,12000,,Kevin
+17/12/2023 02:15:02,Petty Cash Expense,Payroll nicos and ken ,1250,12162023,PJ
+17/12/2023 02:49:13,Petty Cash Expense,"Gas,ice,water etc.",853,12162023,PJ
+17/12/2023 11:53:28,Income,Balance payment - Canlubang,5000,12162023,
+17/12/2023 22:17:00,Petty Cash Expense,Avanza tire ,5660,,PJ
+17/12/2023 22:18:17,Petty Cash Expense,Avanza repair ,2500,,PJ
+17/12/2023 22:21:34,Petty Cash Expense,Spirit and soda etc. 12182023,2961.1,,PJ
+17/12/2023 22:22:35,Petty Cash Expense,Avanza gas 12182023,1000,,PJ
+17/12/2023 22:23:45,Petty Cash Expense,Parking fee,100,,PJ
+17/12/2023 22:25:40,Petty Cash Expense,New uniform crew,1202,,PJ
+17/12/2023 22:28:05,Petty Cash Expense,Payroll pj 12152023 and 12162023,2000,,PJ
+19/12/2023 01:48:10,Income,DP - 12202023,10000,12202023,
+19/12/2023 02:08:39,Expense,Kevin Reimburse Over Petty Cash Expense - Trolley and Extension,808,,
+19/12/2023 02:11:20,Petty Cash Return,Balance Kevin negative expense payment,-808,,Kevin
+19/12/2023 02:30:05,Expense,Payroll - Agdangan - Jack - Ken,2000,12182023,
+19/12/2023 13:48:18,Petty Cash Assign,Budget BGC,9000,,PJ
+20/12/2023 00:45:12,Petty Cash Expense,Payroll pj 12182023,1000,,PJ
+20/12/2023 00:54:35,Petty Cash Expense,Gas avanza 12182023,800,,PJ
+20/12/2023 01:00:38,Petty Cash Expense,"Juice and soda,ice,water etc.",1015,,PJ
+20/12/2023 01:03:41,Petty Cash Expense,Lunch day 1 and 2 12182023,880.29,,PJ
+20/12/2023 01:10:26,Petty Cash Expense,"Fruits,soda,beers,spirits,avanza gas,parking fee",7307.75,12202023,PJ
+20/12/2023 10:23:37,Income,01132024 - DP,6000,01132024,
+20/12/2023 14:56:31,Petty Cash Expense,Rfid avanza ,400,12202023,PJ
+20/12/2023 15:27:13,Petty Cash Assign,Budget - 12202023,3015,,PJ
+20/12/2023 23:03:29,Income,Balance payment,13500,12202023,
+21/12/2023 00:08:07,Expense,Ken and Ralf payroll,1200,12202023,
+21/12/2023 00:10:01,Expense,DJ reinhard,4500,12202023,
+21/12/2023 01:44:34,Petty Cash Expense,"Parking fee,gas,ice,crew meal etc.",1762,12202023,PJ
+21/12/2023 21:26:03,Petty Cash Expense,Payroll pj 12202023,1000,,PJ
+21/12/2023 21:30:18,Expense,Payroll nicos,600,12202023,
+21/12/2023 23:53:46,Expense,"Payroll - Kevin 12152023, 12162023, 12202023",3000,,Kevin
+21/12/2023 23:54:49,Petty Cash Assign,PJ - Loan,1000,,PJ
+22/12/2023 13:06:10,Expense,Christmas Party - Budget,2000,,
+22/12/2023 13:06:34,Petty Cash Assign,Club house rental,1500,,PJ
+23/12/2023 11:46:20,Expense,Christmas Party awards,1500,12232023,
+24/12/2023 19:48:40,Petty Cash Assign,PJ loan,5000,,PJ
+29/12/2023 11:57:02,Petty Cash Assign,PJ - Loan,10000,,PJ
+29/12/2023 21:16:30,Expense,Kevin share,20000,,
+29/12/2023 21:16:49,Petty Cash Expense,PJ share,20000,,PJ
+13/01/2024 13:12:58,Income,Balance payment,7000,01132024,
+13/01/2024 23:32:02,Expense,"Payroll Ken, Nicos, Paul and Kevin",3200,01132024,
+14/01/2024 00:30:39,Petty Cash Expense,Gas avanza ,1000,01132024,PJ
+14/01/2024 00:31:30,Petty Cash Expense,Rfid avanza ,200,01132024,PJ
+14/01/2024 00:34:08,Petty Cash Expense,Soda/juice and fruits ,1054.85,01132024,PJ
+14/01/2024 00:35:40,Petty Cash Expense,Parking fee avanza ,50,01132024,PJ
+14/01/2024 00:37:23,Petty Cash Expense,Spirits and beers ,2457.5,01132024,PJ
+14/01/2024 00:41:55,Petty Cash Expense,"Additional juices,ice,crew food,mineral ",1018,01132024,PJ
+14/01/2024 09:03:52,Income,Dp 09292024,5000,09292024,
+15/01/2024 12:34:59,Petty Cash Assign,Quick loan,3000,,Ken
+15/01/2024 22:11:09,Petty Cash Return,Return loan,3000,,Ken
+17/01/2024 13:20:11,Petty Cash Expense,Registration avanza ,2700,,PJ
+19/01/2024 14:13:14,Income,Dp 03092024,6000,03092024,
+30/01/2024 15:00:12,Petty Cash Assign,"Agdangan assign 488, 515 and 2000",3003,,PJ
+31/01/2024 13:33:47,Income,Dp,4500,02172024,
+31/01/2024 13:35:00,Petty Cash Assign,DP was sent to Pj,4500,02172024,PJ
+31/01/2024 13:35:36,Petty Cash Expense,Marco Payment Commission,500,02172024,PJ
+02/02/2024 17:46:13,Income,Dp - 02092024,5000,02092024,
+07/02/2024 09:48:04,Income,Ms. Mai dp 5000,5000,02142024,
+07/02/2024 18:31:59,Petty Cash Expense,Gas and parking fee,350,02092024,PJ
+07/02/2024 18:33:54,Petty Cash Expense,Spirits ,1571.2,02092024,PJ
+07/02/2024 18:35:49,Petty Cash Expense,Juice and soda ,1075.35,02092024,PJ
+08/02/2024 17:17:58,Petty Cash Assign,PJ Loan,1500,,PJ
+09/02/2024 17:02:55,Petty Cash Assign,Gas and toll budget,1000,09092024,PJ
+10/02/2024 12:28:42,Expense,1200 payroll jhamire and nicos ,1200,02092024,
+10/02/2024 12:32:23,Petty Cash Expense,"Gas,rfid,ice,crew drinks. Etc.",2334,02092024,PJ
+10/02/2024 15:12:27,Expense,Cups dp,1000,,
+10/02/2024 21:00:22,Expense,Payroll PJ,1000,02092024,
+12/02/2024 15:54:19,Petty Cash Assign,02142024 budget,3000,,PJ
+12/02/2024 18:40:25,Petty Cash Assign,Budget,1500,02142024,PJ
+13/02/2024 20:15:37,Petty Cash Expense,"Sprit,juice,fruits,parking fee",3142.45,02142024,PJ
+14/02/2024 13:26:08,Petty Cash Expense,Rfid ,410,,PJ
+14/02/2024 13:42:19,Petty Cash Expense,Gas ,1000,,PJ
+15/02/2024 04:34:57,Income,Balance,2500,02142024,
+15/02/2024 04:35:32,Expense,Yelo + Cobra + yosi,500,02142024,
+15/02/2024 04:36:03,Expense,Payroll PJ Kevin Travis,2600,02142024,
+15/02/2024 17:45:04,Petty Cash Assign,"Budget for 16,17,18",8000,,PJ
+15/02/2024 21:28:44,Petty Cash Expense,Parking Fee,50,,PJ
+15/02/2024 21:29:48,Petty Cash Expense,Extra Amaretto ,1018,02162024,PJ
+15/02/2024 21:32:47,Petty Cash Expense,Spirits,5885.8,02162024,PJ
+15/02/2024 21:35:20,Petty Cash Expense,"Juices, Fruits, etc",2920.3,,PJ
+15/02/2024 22:56:27,Income,DP - 02162024,6500,02162024,
+15/02/2024 23:11:15,Petty Cash Assign,Operational Budget,2950.1,,PJ
+15/02/2024 23:11:34,Petty Cash Expense,Toll,176,,PJ
+16/02/2024 13:52:27,Petty Cash Expense,Rfid ,310,,PJ
+17/02/2024 03:02:33,Income,Balance 02162024,6500,02162024,
+17/02/2024 03:03:40,Petty Cash Assign,Event budget ,6500,,PJ
+17/02/2024 03:05:04,Petty Cash Expense,Payroll Kenzie and jhamire ,1200,02162024,PJ
+17/02/2024 03:05:42,Petty Cash Expense,Gas ,500,,PJ
+17/02/2024 03:07:39,Petty Cash Expense,Parking fee ,90,2162024,PJ
+17/02/2024 03:09:13,Petty Cash Expense,Ice and crew meal ,744,02162024,PJ
+17/02/2024 11:25:20,Petty Cash Expense,Payroll pj ,1000,2162024,PJ
+17/02/2024 11:51:16,Petty Cash Expense,Water ,25,02162024,PJ
+17/02/2024 15:50:49,Petty Cash Expense,Crew meal lunch ,300,02172024,PJ
+17/02/2024 17:42:34,Petty Cash Expense,Ice and transpo ,420,02172024,PJ
+17/02/2024 21:57:58,Income,Balance 02172024,4500,02172024,
+17/02/2024 22:00:14,Petty Cash Assign,Events fund ,4500,,PJ
+17/02/2024 22:03:23,Petty Cash Expense,Payroll Angelo and ken ,1400,02172024,PJ
+17/02/2024 22:05:18,Petty Cash Expense,Water ,25,02172024,PJ
+18/02/2024 01:22:28,Petty Cash Expense,Gas ,500,,PJ
+18/02/2024 01:23:29,Petty Cash Expense,Rfid ,300,,PJ
+18/02/2024 01:30:43,Petty Cash Expense,Payroll pj ,1000,02172024,PJ
+18/02/2024 01:51:47,Petty Cash Expense,Crew beers etc. ,477,,PJ
+18/02/2024 11:42:35,Expense,Easy trip ,310,,
+18/02/2024 11:43:14,Petty Cash Expense,Water,25,02182024,PJ
+18/02/2024 13:52:07,Petty Cash Expense,Gear oil and coolant avanza ,1000,,PJ
+18/02/2024 15:55:40,Petty Cash Expense,Ice ,200,02182024,PJ
+18/02/2024 16:01:32,Petty Cash Expense,Crew meal ,580,02182024,PJ
+18/02/2024 20:44:46,Petty Cash Expense,Dishwashing liquid and garbage bag,163,02182024,PJ
+19/02/2024 01:10:43,Petty Cash Expense,Gas ,500,02182024,PJ
+19/02/2024 01:14:39,Petty Cash Expense,Payroll ken and anjelo,1600,02182024,PJ
+19/02/2024 01:15:44,Income,Balance 02182024,7500,02182024,
+19/02/2024 01:17:38,Petty Cash Assign,Budget events ,7500,,PJ
+19/02/2024 01:18:55,Petty Cash Expense,Payroll pj,1000,02182024,PJ
+21/02/2024 11:06:12,Expense,Kevin Payroll 3 events,3000,,Kevin
+21/02/2024 22:31:44,Expense,Liquor - 02222024,1398,2222024,
+21/02/2024 22:33:47,Expense,Juice and fruits ,857,02222024,
+22/02/2024 20:30:22,Petty Cash Expense,"Ice and cobra,yosi ",205,02222024,PJ
+22/02/2024 20:32:29,Petty Cash Expense,Payroll kenzie and nicos ,1250,02222024,PJ
+08/03/2024 16:23:37,Petty Cash Assign,Budget 1300,1300,03092024,PJ
+09/03/2024 22:56:49,Petty Cash Expense,Rfid,210,03092024,PJ
+09/03/2024 22:57:32,Petty Cash Expense,Gas avanza ,500,03092024,PJ
+09/03/2024 22:59:42,Petty Cash Expense,"Parking,ice,cobra",260,03092024,PJ
+09/03/2024 23:00:57,Petty Cash Expense,Spirit coconut rum,266,03092024,PJ
+09/03/2024 23:02:45,Petty Cash Expense,"Juice,soda,fruits",1298.85,03092024,PJ
+09/03/2024 23:04:14,Petty Cash Expense,Tequila additional ,205,03092024,PJ
+09/03/2024 23:06:27,Petty Cash Expense,Spirits and cordial ,1363.5,03092024,PJ
+09/03/2024 23:08:14,Petty Cash Expense,Water and amaretto sour ,348.5,03092024,PJ
+09/03/2024 23:09:11,Petty Cash Expense,Food crew,800,03092024,PJ
+09/03/2024 23:12:11,Income,Balance 03092024,6000,03092024,
+09/03/2024 23:28:07,Petty Cash Expense,"Payroll Kenzie,nicos,Ralf ",2100,03092024,PJ
+09/03/2024 23:39:44,Petty Cash Assign,Budget ,6000,,PJ
+10/03/2024 10:46:57,Petty Cash Expense,Kevin payroll,1000,,PJ
+10/03/2024 13:10:11,Petty Cash Expense,Payroll pj ,1000,03092024,PJ
+02/04/2024 17:12:13,Income,Add on ,26850,06082024,
+13/04/2024 18:34:03,Income,Fullpayment ,11000,06212024,
+26/04/2024 21:40:53,Petty Cash Assign,PJ loan,3000,,PJ
+09/05/2024 09:44:10,Petty Cash Assign,Additional loan,3000,,PJ
+12/05/2024 17:11:47,Income,Fullpayment 05122024,6500,05122024,
+12/05/2024 17:13:15,Petty Cash Expense,Spirits and cordials ,1655.45,05122024,PJ
+12/05/2024 17:14:37,Petty Cash Expense,Additional cordials ,234.5,05122024,PJ
+12/05/2024 17:16:15,Petty Cash Expense,"Fruits,soda,garnish and juices ",1907.6,05122024,PJ
+12/05/2024 17:20:12,Petty Cash Expense,"Ice, print and etc. ",357,05122024,PJ
+13/05/2024 02:37:08,Petty Cash Expense,Gas avanza ,400,05122024,PJ
+13/05/2024 13:30:52,Expense,"Pj(1000), Ken (600), Nicos (600)",2200,05122024,
+13/05/2024 13:32:37,Petty Cash Return,Loan payment ,500,,PJ
+,,,,,
+17/05/2024 14:32:46,Income,Down payment 06012024,3500,06012024,
+17/05/2024 14:36:08,Income,Fullpayment 06082024,22100,06082024,
+23/05/2024 19:39:40,Petty Cash Assign,Budget and Loan,4500,,PJ
+01/06/2024 16:04:51,Petty Cash Assign,Kevin Loan,25000,,Kevin
+01/06/2024 23:16:29,Petty Cash Expense,Payroll Ken and nicos ,1200,06012024,PJ
+01/06/2024 23:24:26,Petty Cash Expense,"Adds on ice,spirit,juice,gas ",1949.85,06012024,PJ
+04/06/2024 11:39:49,Income,Fullpayment ,3000,06012024,
+09/06/2024 10:35:51,Expense,Gas avanza ,500,06082024,
+09/06/2024 10:38:09,Petty Cash Expense,"Rfid,gas,parkingfee,water ",1075,06082024,PJ
+09/06/2024 10:40:48,Petty Cash Expense,"Payroll pj,ken,nicos",2400,06082024,PJ
+09/06/2024 11:10:39,Expense,"Others, cobra and ice",478,06082024,
+09/06/2024 11:11:14,Expense,Kevin parking and toll,600,06082024,
+09/06/2024 11:13:21,Expense,Juice,1520,06082024,
+09/06/2024 11:13:58,Expense,Spirits,20292,06082024,
+09/06/2024 11:14:46,Expense,Landers parking kev and pj,100,06082024,
+12/06/2024 10:18:49,Petty Cash Assign,PJ Loan,3600,,PJ
+13/06/2024 11:05:37,Expense,Cups,1890,,
+18/06/2024 13:32:26,Income,06212024,3600,06212024,
+20/06/2024 09:38:07,Income,Downpayment,3900,07122024,
+21/06/2024 18:10:48,Income,Fullpayment ,3600,06212024,
+21/06/2024 18:13:46,Expense,Gas and rfid ,1000,06212024,
+22/06/2024 01:08:50,Petty Cash Assign,Pettycash ,3600,06212024,PJ
+22/06/2024 01:10:14,Petty Cash Expense,"Payroll pj,ken,Kenzie ",2200,06212024,PJ
+22/06/2024 01:12:03,Petty Cash Expense,"Ice,water,cobra,yosi",532,06212024,PJ
+22/06/2024 01:12:58,Petty Cash Expense,Referal Ken ,200,06212024,PJ
+24/06/2024 10:45:52,Expense,06212024 - delivery and event stock,7900,06212024,
+24/06/2024 10:59:27,Income,OhMyVenus - DP,5000,07202024,
+27/06/2024 15:57:38,Petty Cash Assign,loan,1300,,PJ
+27/06/2024 15:58:14,Expense,Kevin Salary,3000,,
+05/07/2024 14:28:02,Petty Cash Assign,PJ loan,10015,,PJ
+05/07/2024 14:28:37,Income,DP - 01172025,10000,01172025,
+05/07/2024 15:53:50,Petty Cash Assign,PJ loan,400,,PJ
+09/07/2024 20:34:58,Petty Cash Assign,PJ loan,500,,PJ
+11/07/2024 19:37:27,Income,Balance - 07122024,3900,,
+11/07/2024 19:39:36,Expense,Liquor - 07122024,1502,07122024,
+11/07/2024 20:16:13,Expense,Juice and others,739,07122024,
+11/07/2024 20:17:11,Expense,June 21 Juice,500,06212024,
+13/07/2024 01:59:01,Expense,Sweldo ken and kenzie and yelo,1780,07122024,
+13/07/2024 02:01:55,Income,Extension,1500,07122024,
+13/07/2024 02:03:59,Expense,PJ payroll,1500,07122024,
+13/07/2024 02:04:53,Petty Cash Assign,gas and toll,1000,,PJ
+13/07/2024 02:06:03,Petty Cash Expense,Gas and toll PJ,1000,07122024,PJ
+13/07/2024 03:11:39,Petty Cash Expense,Gas and parking fee,363,07122024,PJ
+13/07/2024 14:29:16,Expense,Tiktok boost,405,,
+19/07/2024 18:37:42,Petty Cash Expense,Gas avanza (landmark),200,,PJ
+19/07/2024 18:38:30,Petty Cash Expense,Rfid avanza ,100,,PJ
+19/07/2024 18:52:37,Petty Cash Expense,Parking fee landmark,50,,PJ
+19/07/2024 21:39:24,Expense,Juice and fruits ,1375,07212024,
+19/07/2024 21:41:32,Expense,Liquor,2320,05212024,
+20/07/2024 15:08:19,Expense,Gas and toll Kev and PJ,2600,07212024,
+20/07/2024 21:23:17,Expense,Yelo and addtional juice,420,,
+20/07/2024 21:23:59,Income,Balance ,7400,07212024,
+21/07/2024 03:14:59,Expense,Payroll,2200,07212024,
+22/07/2024 16:32:45,Petty Cash Assign,PJ loan,1600,,PJ
+23/07/2024 09:08:32,Petty Cash Expense,Boost tiktok video 5 days,857,,Kevin
+01/08/2024 23:30:52,Income,Dp,6350,11092024,
+20/08/2024 17:03:59,Income,PJ loan 2000 + 500,2500,,PJ
+24/08/2024 17:08:13,Income,Dp 09282024,3783,09282024,
+07/09/2024 03:28:45,Petty Cash Assign,PJ loan ,1000,,PJ
+07/09/2024 03:29:19,Income,Full payment,7000,09292024,
+07/09/2024 03:31:19,Expense,Expense and payroll,2000,09062024,
+07/09/2024 03:32:03,Petty Cash Expense,Payroll pj ,1000,09062024,PJ
+07/09/2024 03:32:58,,,,,
+07/09/2024 03:38:58,Income,Fullpayment,3400,09062024,
+07/09/2024 03:41:40,Expense,Grocery ,2140,09062024,
+21/09/2024 20:59:27,Income,Dp 10122024,5500,10122024,
+22/09/2024 17:16:36,Income,Dp 12012024,5000,12012024,
+23/09/2024 11:09:17,Petty Cash Assign,PJ loan,1515,,PJ
+26/09/2024 20:15:51,Expense,Liquor stock,1898,09292024,
+26/09/2024 20:18:04,Expense,Stock,1461.35,09292024,
+26/09/2024 20:19:43,Expense,Addtl blu coracao ,299,09292024,
+26/09/2024 21:37:52,Petty Cash Expense,Gas and parking fee,550,,PJ
+26/09/2024 21:39:30,Petty Cash Assign,Pj loan ,500,,PJ
+26/09/2024 21:41:30,Petty Cash Assign,Gas ,500,,PJ
+28/09/2024 19:01:35,Petty Cash Assign,Budget,1000,,PJ
+28/09/2024 22:37:10,Petty Cash Expense,"Rfid,meal,ice,water ",720,09282024,PJ
+29/09/2024 01:19:48,Income,Balance 09282024,3783,09282024,
+29/09/2024 01:23:52,Petty Cash Assign,Petty cash ,3783,09282024,PJ
+29/09/2024 01:27:18,Petty Cash Expense,Payroll nicos pj,1700,09282024,PJ
+29/09/2024 16:20:58,Petty Cash Expense,"Gas,meal,ice,mineral ",2000,09292024,PJ
+30/09/2024 01:12:38,Petty Cash Expense,"Payroll and referral nicos, kenzie ",1400,9292024,PJ
+30/09/2024 01:13:43,Petty Cash Expense,Payroll pj ,1000,09292024,PJ
+30/09/2024 01:16:04,Petty Cash Expense,Gas ,500,09292024,PJ
+08/10/2024 10:53:29,Petty Cash Assign,PJ loan,4000,,PJ
+13/10/2024 01:27:58,Income,Payment 10122024,5000,10122024,
+13/10/2024 01:30:56,Petty Cash Assign,Petty cash pj ,1000,10122024,PJ
+13/10/2024 01:33:23,Petty Cash Expense,"Gas,ice,water etc. ",740,10122024,PJ
+20/10/2024 23:33:18,Expense,juice and fruits,1004,10122024,
+20/10/2024 23:35:11,Expense,coconut rum savemore,602,10122024,
+20/10/2024 23:37:02,Expense,Liquor,912,10122024,
+20/10/2024 23:39:10,Expense,Payroll Ken and Nicos,1200,10122024,
+20/10/2024 23:40:55,Expense,PJ gas with bank service charge,1015,10122024,
+20/10/2024 23:41:37,Petty Cash Assign,PJ loan,500,10122024,PJ
+22/10/2024 16:02:09,Income,DP 10252024,6000,10252024,
+26/10/2024 00:26:43,Expense,Ken payroll & other expenses,1430,10252024,Ken
+26/10/2024 00:27:08,Petty Cash Assign,PJ loan,2000,,PJ
+26/10/2024 00:29:32,Expense,800,PJ gas + toll,10242024,
+26/10/2024 00:33:46,Expense,Payroll,1500,10252024,
+26/10/2024 00:34:16,Expense,Kevin Payroll Events,2000,,
+26/10/2024 09:51:30,Expense,Juice and Fruits,951,10252024,
+26/10/2024 09:53:26,Expense,Liquor,944,10252024,
+29/10/2024 13:09:26,Income,10252024 balance,6500,10252024,
+31/10/2024 20:40:19,Income,Balance 11092024,6350,11092024,
+03/11/2024 16:16:43,Income,6000 dp for 11500 package,6000,12072024,
+08/11/2024 11:40:10,Expense,"Gas,rfid,avanza vulcanize ",1000,11092024,
+10/11/2024 18:59:20,Expense,"Gas,water,ice etc. ",1000,11092024,
+11/11/2024 09:34:55,Expense,"PJ, Jhamire, Jack Payroll",1900,11092024,
+11/11/2024 09:35:34,Expense,Liquor,1010,11092024,
+11/11/2024 09:38:20,Expense,1000 pcs cups + rush fee,4320,,
+11/11/2024 09:40:32,Expense,addl liquor,482,11092024,
+11/11/2024 09:42:25,Expense,"Juice, Cordials, Milo",1163,11092024,
+11/11/2024 09:49:49,Petty Cash Assign,PJ loan,500,,PJ
+11/11/2024 10:10:06,Petty Cash Assign,PJ loan,1000,,PJ
+19/11/2024 17:16:02,Expense,Renovation: Hardware metal and tools,3044,,
+19/11/2024 17:16:36,Expense,PJ Gas,500,,
+19/11/2024 22:33:47,Expense,"Bar needs: Strip Light, Cooler, Shot Glass, Bar decoration",4527.1,,
+19/11/2024 22:34:41,Expense,"Bisagra, Nuts, Bar wheels",1074,,
+24/11/2024 22:01:34,Expense,"Gas,parking (repair mobilebar)",600,,
+24/11/2024 22:03:42,Expense,Materials (repair mobilebar),3364,,
+24/11/2024 22:04:45,Expense,Labor (repair mobilebar),2500,,
+24/11/2024 22:07:06,Expense,Materials (repair mobilebar),600,,
+30/11/2024 08:02:34,Income,Balance Payment,5000,12012024,
+30/11/2024 08:09:03,Expense,"460 -,Additional square tube, 480 4x Bolt locks, 50 50x blind ribits, 480 Ribiter, 380 3x Drill bits, Plastic cutting disc, 360 2x Pylox ",1730,,
+30/11/2024 08:30:25,Petty Cash Assign,3800- Grocery 1000 - Sahod ni Al for assistance 700 - Sahod ni Dexter 1000 - Gas 1000 - Toll Skyway / Nlex 1000 - Extra budget  Total: 8500 ,8500,,PJ
+01/12/2024 18:51:13,Petty Cash Assign,Petty cash additional 3000,3000,,PJ
+01/12/2024 18:52:46,Petty Cash Expense,Welder/labor repair mobile bar payroll,2600,,PJ
+01/12/2024 18:54:00,Petty Cash Expense,Gas,1300,12012024,PJ
+01/12/2024 18:55:23,Petty Cash Expense,Rfid/easy trip ,1020,12012024,PJ
+01/12/2024 18:59:23,Petty Cash Expense,Grocery/spirits/ice/water,3565.3,12012024,PJ
+01/12/2024 19:02:33,Petty Cash Expense,Hardware/lunch/merienda (repair mobilebar),2180,,PJ
+02/12/2024 16:23:47,Petty Cash Expense,Rfid/easy trip ,1000,12012024,PJ
+02/12/2024 16:25:26,Income,Down payment ,5500,12132024,
+06/12/2024 20:08:04,Income,DP,5000,01242025,
+06/12/2024 20:08:37,Expense,Stock ,1842.3,12072024,
+06/12/2024 21:15:58,Expense,"Fruits, soda and juice",1037.1,12072024,
+08/12/2024 04:23:44,Petty Cash Assign,Petty cash,2800,,PJ
+08/12/2024 04:28:17,Petty Cash Expense,Payroll,1800,12072024,PJ
+08/12/2024 04:31:31,Petty Cash Expense,"Gas,ice,water etc. ",1181,12072024,PJ
+08/12/2024 04:43:38,Income,Balance ,5500,12072024,
+12/12/2024 23:49:29,Expense,Edible Glitters,640,,
+12/12/2024 23:51:02,Expense,12122024 & 12132024 liquor stock,1956,12122024,
+12/12/2024 23:54:10,Expense,fruits and juice for 1212 and 1213,1751,12132024,
+12/12/2024 23:56:42,Income,12122024 - OS Bato payment,11500,12122024,
+13/12/2024 00:01:09,Income,OS Bato - Tip,0,12122024, 
+13/12/2024 00:01:44,Petty Cash Assign,"3000 loan, 1500 budget 12122024",4500,12122024,
+13/12/2024 00:02:28,Expense,Kevin Payroll + Tip,0,12122024,
+13/12/2024 01:49:30,Petty Cash Expense,"Parking fee, gas, liquor, ice, rfid",1820,12122024,PJ
+13/12/2024 01:54:13,Income,Fullpayment ,13000,12182024,
+14/12/2024 01:44:08,Petty Cash Expense,"Water,ice,gas,rfid ",1225,12132024,PJ
+14/12/2024 01:52:52,Petty Cash Expense,Payroll Ken and ralf,1000,12132024,PJ
+17/12/2024 21:49:15,Petty Cash Expense,Avanza change gulong and change oil Labor ,6430,,PJ
+17/12/2024 21:50:39,Petty Cash Expense,Avanza oil filter and New oil ,770,,PJ
+17/12/2024 21:51:51,Petty Cash Expense,Avanza wiper and parking fee,450,,PJ
+18/12/2024 10:52:53,Petty Cash Expense,Avanza rfid and gas,1500,12182024,PJ
+19/12/2024 20:57:53,Income,Balance ,5000,12132024,
+19/12/2024 20:59:45,Petty Cash Assign,Budget event Agda beach Villa ,5000,,PJ
+19/12/2024 21:01:53,Petty Cash Expense,Rfid and gas pauwi ,1210,12182024,PJ
+19/12/2024 21:03:46,Petty Cash Expense,Payroll Ken 700 ralf 700 pj 1000,2400,12182024,PJ
+19/12/2024 22:01:09,Petty Cash Expense,"Ice,water,crew meal ",675,12182024,PJ
+23/12/2024 13:22:43,Expense,"Deck 14 Christmas Party: Drinks: 2k, 3x Leompo 990, 2 x Bangus 440, 4x Pares 180, Clubhouse 500",4110,,
+23/12/2024 13:26:54,Expense,"Bonus: Anjelo 500, Kenzie 500, Nicos 1000, Jack 1000, Jhamire 1000, Ken 1000",5000,,
+28/12/2024 14:46:27,Expense,Agdangan Supply,1018.25,12182024,
+28/12/2024 14:47:40,Expense,Agdangan supply grocery,1145,1218224,
+09/01/2025 10:48:52,Petty Cash Assign,PJ loan,4000,,PJ
+09/01/2025 13:23:29,Income,Dp 01252025,6650,01252025,
+15/01/2025 18:23:42,Petty Cash Expense,Juice and fruits ,1206.65,01172025,PJ
+17/01/2025 22:45:47,Petty Cash Assign,Pettycash ,2000,,PJ
+17/01/2025 22:47:20,Petty Cash Expense,Gas and coolant ,1300,01172025,PJ
+17/01/2025 22:50:25,Petty Cash Expense,Ice and water ,190,01172025,PJ
+17/01/2025 22:52:07,Petty Cash Assign,Fullpayment ,12000,01172025,PJ
+17/01/2025 23:02:12,Petty Cash Expense,Rfid ,622,01172025,PJ
+17/01/2025 23:19:30,Petty Cash Expense,Payroll jhamire and Ken ,1200,01172025,PJ
+17/01/2025 23:20:53,Petty Cash Expense,Crew food ,360,01172025,PJ
+17/01/2025 23:28:48,Expense,Alcohol and Parking,2208,01172025,
+17/01/2025 23:36:08,Expense,Avanza Battery Repair,3500,,
+23/01/2025 10:55:39,Petty Cash Expense,Cordials and spirits ,3086.1,01252025,PJ
+23/01/2025 10:56:46,Petty Cash Expense,Juice and garnish ,1980.3,01242025,PJ
+23/01/2025 10:57:26,Petty Cash Expense,Parking fee and gas,350,,PJ
+24/01/2025 12:00:54,Petty Cash Return,Kevin Return Loan,8500,,Kevin
+24/01/2025 12:04:59,Petty Cash Assign,Assign Gas and Toll Budget,1500,,PJ
+25/01/2025 01:13:01,Income,Fullpayment ,5000,01242025,
+25/01/2025 01:13:48,Petty Cash Assign,Pettycash ,5000,,PJ
+25/01/2025 01:15:43,Petty Cash Expense,"Ice,water and juice",523,01242025,PJ
+25/01/2025 01:16:46,Petty Cash Expense,Gas,1000,01242025,PJ
+25/01/2025 01:18:09,Petty Cash Expense,Payroll ken and nicos ,1300,01242025,PJ
+26/01/2025 09:56:48,Income,Full payment ,6650,01252025,
+26/01/2025 09:58:53,Petty Cash Expense,"Parking,water,ice ",295,01252025,PJ
+26/01/2025 09:59:47,Petty Cash Expense,Gas avanza ,300,01252025,PJ
+26/01/2025 10:01:34,Petty Cash Expense,"Payroll ken and renz,pj ",2250,01252025,PJ
+26/01/2025 10:04:36,Petty Cash Expense,Payroll pj,1000,01242025,PJ
+02/02/2025 22:49:58,Income,Feb15 dp,5600,02152025,
+09/02/2025 21:19:33,Income,Dp payment,5300,02222025,
+12/02/2025 11:24:36,Expense,Kevin Payroll internet,3000,,
+15/02/2025 14:53:29,Income,Balance payment,5000,02152025,
+15/02/2025 14:54:14,Expense,"Gas, Ice and Payroll",3200,02152025,
+15/02/2025 14:56:57,Expense,"Nescafe, Juice",1305,05152025,
+15/02/2025 14:58:22,Expense,Liquor,2321,02222025,
+22/02/2025 20:53:14,Income,Balance payment + discounted extension,8300,02222025,
+22/02/2025 20:53:53,Expense,Gas + Yelo,1000,02222025,
+22/02/2025 21:19:12,Petty Cash Assign,Payroll + budget,2950,02222025,PJ
+23/02/2025 00:55:56,Petty Cash Expense,"Payroll pj,ken,renz ",2200,02222025,PJ
+23/02/2025 01:02:51,Petty Cash Expense,"Additional water,ice and juice ",422,02222025,PJ
+23/02/2025 01:05:47,Petty Cash Expense,Food and drinks crew,822,,PJ
+17/05/2025 10:56:36,Income,Half payment 05232025,5000,05232025,
+17/05/2025 11:04:30,Petty Cash Assign,Pettycash 05232025,5000,05232025,PJ
+17/05/2025 14:25:49,Petty Cash Expense,Spirits ,1842,05232025,PJ
+17/05/2025 14:27:24,Petty Cash Expense,Juice and fruits,735,05232025,PJ
+17/05/2025 14:28:57,Petty Cash Expense,Gas and parking fee,1050,05232025,PJ
+23/05/2025 12:14:34,Petty Cash Expense,Rfid and ice ,592,05232025,PJ
+24/05/2025 03:28:58,Petty Cash Expense,"Payroll renz,gelo,pj",2500,05232025,PJ
+24/05/2025 03:30:50,Income,Full payment ,5000,05232025,
+24/05/2025 03:34:16,Petty Cash Assign,Petty cash ,5000,05232025,PJ
+24/05/2025 19:34:56,Petty Cash Expense,Crew food ,350,05232025,PJ
+25/05/2025 12:21:25,Petty Cash Expense,Payroll and gas kevin,1500,05232025,PJ
+27/05/2025 11:48:31,Petty Cash Expense,Cups,3820,,Kevin
+28/05/2025 12:42:24,Income,Extension payment,1500,05232025,
+28/05/2025 12:44:54,Petty Cash Assign,Pettycash,1500,,PJ
+04/06/2025 13:04:46,Income,Downpayment,16750,06082025,
+04/06/2025 13:05:35,Expense,Spirits,3905,06082025,
+04/06/2025 13:06:51,Expense,Juice and cola,2627,06082025,
+04/06/2025 13:07:09,Expense,Renz pick up cups,300,06082025,
+04/06/2025 13:07:36,Expense,Parking,50,06082025,Kevin
+06/06/2025 21:24:08,Petty Cash Assign,Pettycash,8000,06082025,PJ
+06/06/2025 21:37:42,Petty Cash Expense,"Gas,rfid,parking fee",1080,06082025,PJ
+06/06/2025 21:40:45,Petty Cash Expense,Edible glitters,800,06082025,PJ
+06/06/2025 21:42:34,Petty Cash Expense,Spirits and juice,3616.4,06082025,PJ
+06/06/2025 21:44:59,Petty Cash Expense,Margarita mix,414,06082025,PJ
+06/06/2025 21:47:36,Petty Cash Expense,Round tray and blue container,305.54,06082025,PJ
+06/06/2025 21:50:07,Petty Cash Expense,Cleaning materiales,176,06082025,PJ
+06/06/2025 21:51:40,Petty Cash Expense,Additional amaretto,496,06082025,PJ
+08/06/2025 22:59:00,Expense,Crew meal,1464,06082025,
+08/06/2025 23:00:05,Expense,Crew meal drinks + Yosi,438,06082025,
+08/06/2025 23:01:10,Expense,"Ice, yosi and sting",800,06082025,
+08/06/2025 23:02:46,Expense,Parking ,600,06082025,
+09/06/2025 00:00:29,Income,Balance,24750,06082025,
+09/06/2025 00:00:58,Expense,Kevin toll + Gas,1700,06082025,
+09/06/2025 00:45:39,Petty Cash Expense,Rfid,510,06082025,PJ
+09/06/2025 00:46:53,Petty Cash Expense,Gas avanza,500,06082025,PJ
+09/06/2025 08:09:26,Income,Tip,4000,06082025,
+09/06/2025 08:11:18,Expense,Payroll 6pax ,7200,06082025,
+09/06/2025 08:14:45,Expense,Bday bash kuya roy ,1000,06082025,
+11/06/2025 23:42:32,Income,DP ,8000,11152025,
+14/06/2025 12:47:17,Petty Cash Expense,"Avanza change oil,maintenance,labor ",3130,,PJ
+14/06/2025 12:54:10,Expense,Pj and kevin payroll,17518,06082025,
+25/06/2025 07:58:17,Petty Cash Assign,Loan,10000,,Ken
+19/07/2025 22:08:10,Petty Cash Assign,"Yelo, gas, toll, coke, advance",2550,,PJ
+19/07/2025 22:08:50,Income,Full payment,11400,07202025,
+19/07/2025 22:10:20,Petty Cash Expense,Domain name,2244,,Kevin
+21/07/2025 00:23:38,Income,Extension,2000,07202025,
+21/07/2025 00:25:55,Expense,Payroll nicos + JM,1400,07202025,
+21/07/2025 00:27:28,Expense,Bouquet + Ice,1186,07202025,
+21/07/2025 00:40:13,Expense,Income out - Kevin PJ,6702,07202025,
+21/07/2025 00:40:32,Petty Cash Expense,"Expense gas,rfid,ice etc.",2550,07202025,PJ
+22/07/2025 15:43:40,Petty Cash Assign,PJ loan,500,,PJ
+21/10/2025 14:54:10,Petty Cash Expense,Foods company outing ,8850,,PJ
+30/10/2025 10:45:44,Income,Downpayment ,9400,12042025,
+02/11/2025 22:58:41,Income,Dp,3000,11162025,
+12/11/2025 11:32:09,Petty Cash Assign,Budget,2000,,PJ
+15/11/2025 10:28:43,Petty Cash Expense,"Parkingfee,gas,rfid,mintleafs",1687,11152025,PJ
+15/11/2025 10:42:36,Expense,Fruits and Juice,1748.15,11152025,
+15/11/2025 10:43:13,Expense,Spirit,3979,11162025,
+15/11/2025 19:13:46,Petty Cash Expense,Ice and xerox,192,11152025,PJ
+15/11/2025 19:17:04,Petty Cash Expense,Food crew,402,11152025,PJ
+15/11/2025 21:47:35,Income,Balance payment ,8000,11152025,
+15/11/2025 22:07:15,Expense,Payroll jm ken ,1600,11152025,
+15/11/2025 22:19:25,Petty Cash Expense,Swimming Ambag + Internet expense,9000,,Kevin
+16/11/2025 14:04:52,Petty Cash Return,Loan ,5000,,Ken
+16/11/2025 14:08:11,Expense,Income out - pj kevin,10370.85,11152025,
+17/11/2025 00:10:56,Petty Cash Expense,"Water,ice, extra needs",445,,PJ
+17/11/2025 00:16:54,Income,Balance ,4500,11162025,
+17/11/2025 00:19:27,Expense,Payroll nicos renz,1800,11162025,
+18/11/2025 11:09:01,Expense,Income out - pj kevin ,1721,11162025,
+03/12/2025 19:10:57,Petty Cash Assign,Petty cash 12042025,13000,12042025,PJ
+03/12/2025 19:13:41,Petty Cash Expense,"Parkingfee,gas,spirits,juice and garnish ",11034.6,12042025,PJ
+04/12/2025 12:43:09,Income,Full balance payment,15300,12042025,
+05/12/2025 01:04:44,Expense,"Extra tonic,crew meal",1100,12042025,
+05/12/2025 01:06:53,Expense,Crew entertainment ,585,12042025,
+05/12/2025 01:09:07,Petty Cash Expense,Tube ice,190,12042025,PJ
+05/12/2025 01:10:26,Expense,Payroll jack and renz,2000,12042025,
+05/12/2025 01:12:57,Petty Cash Return,Loan ,5000,,Ken
+05/12/2025 01:24:33,Expense,Income out kevin pj,9790,12042025,
+16/12/2025 18:22:46,Petty Cash Expense,Ham and quezo de bola for crew ,4830,,PJ
+22/12/2025 13:03:35,Expense,"Year-end: Prizes, Bonus and games",8650,,
+22/12/2025 13:05:58,Expense,Year-end: Food and venue,9089.29,,
+22/12/2025 13:07:01,Petty Cash Return,Abono reimburse year-end,579,,Kevin
+20/01/2026 19:46:13,Income,Downpayment ,4000,06282026,
+20/01/2026 19:48:09,Petty Cash Assign,Pettycash/loan pj ,3000,06282026,PJ
+24/01/2026 10:51:32,Income,Down payment,10000,01262026,
+25/01/2026 12:23:23,Income,Fullpayment,30500,05292026,
+25/01/2026 12:24:12,Expense,Referal fee ken,1500,05292026,
+25/01/2026 15:36:21,Expense,Gas and rfid avanza,1800,01262026,
+25/01/2026 19:52:21,Expense,"Juices,soda and garnish ",1728.85,01262026,
+25/01/2026 19:53:12,Expense,Parking fee,50,01262026,
+25/01/2026 19:54:53,Expense,Spirits ,1356.75,01262026,
+26/01/2026 22:26:21,Income,Balance ,3800,01262026,
+26/01/2026 22:28:17,Expense,Crew meal ,350,01262026,
+26/01/2026 22:29:29,Expense,Ice and print,340,01262026,
+26/01/2026 22:33:28,Expense,Payroll jack and renz,1400,01262026,
+26/01/2026 22:58:57,Expense,Kevin and pj cashout ,6774,01262026,
+26/01/2026 23:03:22,Expense,Kevin Cashout,0,,
+11/02/2026 11:05:05,Petty Cash Expense,Labor and engine oil (change oil avanza),2000,,PJ
+11/02/2026 11:16:19,Petty Cash Expense,"Oilfilter,engine filter,cabin filter",880,,PJ
+11/03/2026 19:43:37,Income,March 27 DP,3350,03272026,
+14/03/2026 08:29:16,Expense,Cups 500pcs,3820,05292026,
+16/03/2026 17:27:47,Petty Cash Expense,Felipe wedding ,1404,,PJ
+16/03/2026 17:30:39,Petty Cash Expense,Felipes soda and juices ,1246.35,,PJ
+16/03/2026 17:32:51,Petty Cash Expense,Felipes rfid avanza,650,,PJ
+16/03/2026 17:33:25,Petty Cash Expense,Felipes gas avanza,1000,,PJ
+16/03/2026 17:35:21,Petty Cash Expense,"Felipes parking fee,water,tube ice, etc.",475,,PJ
+16/03/2026 17:45:43,Petty Cash Expense,Felipes crew meal ,786,,PJ
+21/03/2026 15:27:04,Petty Cash Assign, Assign budget to PJ,29000,,PJ
+21/03/2026 16:16:18,Expense,Jameson + Payroll Felipe Wedding,2400,,Kevin
+26/03/2026 20:25:39,Petty Cash Expense,Spirits and cordials ,1443,03272026,PJ
+26/03/2026 20:27:22,Petty Cash Expense,"Soda,juice and garnish ",909.5,03272026,PJ
+26/03/2026 20:34:30,Petty Cash Expense,Rfid avanza,262,03272026,PJ
+26/03/2026 20:39:26,Petty Cash Expense,Parking fee and gas,850,03272026,PJ
+28/03/2026 00:53:16,Petty Cash Expense,Ice and energy drinks ,350,03272026,PJ
+28/03/2026 00:55:26,Petty Cash Expense,Gas avanza ,300,03272026,PJ
+28/03/2026 00:58:20,Income,Full payment ,3350,03272026,
+28/03/2026 01:49:53,Expense,Payroll ken and jack ,1700,03272026,
+28/03/2026 02:29:26,Expense,Payroll pj ,885,03272026,
+15/05/2026 20:58:14,Petty Cash Expense,Gas avanza and parking fee,1050,05292026,PJ
+15/05/2026 20:59:42,Petty Cash Expense,Juice and soda etc.,1460,05292026,PJ
+15/05/2026 21:01:54,Petty Cash Expense,Cordials and spirits ,2573.75,05292026,PJ
+23/05/2026 17:23:30,Income,Fullpayment ,6000,07312026,
+23/05/2026 18:00:33,Petty Cash Assign,Pettycash ,6000,07312026,PJ
+28/05/2026 20:50:51,Petty Cash Expense,Gas avanza ,1000,05292026,PJ
+29/05/2026 18:58:39,Petty Cash Expense,Lunch crew meal ,280,05292026,PJ
+29/05/2026 19:02:09,Petty Cash Expense,Ice tube ,440,05292026,PJ
+30/05/2026 00:57:30,Petty Cash Expense,Payroll roll renz angelo nicos,2900,05292026,PJ
+30/05/2026 01:00:46,Petty Cash Expense,"Water,parking fee, ice, gas angelo",350,05292026,PJ
+30/05/2026 01:31:50,Petty Cash Expense,Payroll kevin and pj,15126.25,05292026,PJ
+28/06/2026 01:24:53,Income,Full payment,4100,06282026,
+28/06/2026 01:26:51,Petty Cash Expense,Gas avanza ,1000,06282026,PJ
+28/06/2026 01:28:28,Petty Cash Expense,Alcohol/spirits,1258,06282026,PJ
+28/06/2026 01:29:50,Petty Cash Expense,Juice and garnish,752,06282026,PJ
+28/06/2026 01:34:34,Expense,Payroll renz and nicos,1700,06282026,
+28/06/2026 02:04:53,Expense,"Sting,ice,water, extra juice and spirits ",989,06282026,
+01/08/2026 01:09:30,Petty Cash Expense,Payroll renz ken nicos,2400,07312026,PJ
+01/08/2026 01:10:15,Petty Cash Expense,Gas avanza,500,07312026,PJ
+01/08/2026 01:12:12,Petty Cash Expense,Gas ken ,120,07312026,PJ
+01/08/2026 01:13:09,Petty Cash Expense,Tube ice ,70,07312026,PJ
+01/08/2026 01:15:16,Petty Cash Expense,Parking fee ken pj ,250,07312026,PJ
+01/08/2026 01:19:07,Petty Cash Expense,Print menu,20,07312026,PJ
+01/08/2026 01:20:45,Petty Cash Expense,Crew meal,568,07312026,PJ
+01/08/2026 01:24:20,Petty Cash Expense,Coke soda water,196.5,07312026,PJ
+01/08/2026 01:27:45,Petty Cash Expense,Rfid ,312,07312026,PJ
+25/08/2026 11:14:16,Income,Client down payment,4421.81,09192026,
+25/08/2026 11:16:07,Petty Cash Assign,Pettycash ,4009,09192026,PJ
+04/09/2026 11:27:57,Income,Fullpayment ,4050,09192026,
+20/09/2026 21:35:34,Expense,Paroll ken and nicos,1800,09192026,
+20/09/2026 21:38:41,Expense,Gas avanza,1000,09192026,
+20/09/2026 21:40:58,Expense,Ice and energy drinks,350,09192026,
+20/09/2026 21:45:07,Petty Cash Expense,Sprits and juice ,3652,09192026,PJ
+20/09/2026 21:47:38,Petty Cash Expense,Payroll pj,1000,09192026,PJ
+04/10/2026 02:06:11,Income,Payment ,15000,10032026,
+04/10/2026 02:09:23,Expense,Payroll jack and nicos,2000,10032026,
+04/10/2026 02:10:44,Expense,Crew meal and ice ,790,10032026,
+04/10/2026 02:12:00,Expense,Gas and rfid,2012,10032026,
+05/10/2026 14:50:18,Expense,Coolant avanza ,300,10032026,
+05/10/2026 14:51:04,Expense,Parking fees ,80,10032026,
+05/10/2026 14:55:18,Expense,"Juice and spirits,fruits etc.",5004.32,10032026,
+18/10/2026 19:02:22,Petty Cash Expense,Repair avanza ,4800,,PJ
+18/10/2026 19:04:08,Income,Dp oct 24 2026,5000,10242026,
+18/10/2026 19:05:01,Expense,Gas and parking fee,550,10242026,
+18/10/2026 19:06:17,Expense,"Juice,soda,garnish etc.",1800,10242026,
+18/10/2026 19:08:48,Expense,Spirits and cordials,2345,10242026,
+25/10/2026 01:10:26,Income,Fullpayment ,5000,10242026,
+25/10/2026 01:12:40,Expense,Gas avanza ,1000,10242026,
+25/10/2026 01:15:07,Expense,Mint leaf ,105,10242026,
+25/10/2026 01:17:03,Expense,Parking fee,130,10242026,
+25/10/2026 01:20:21,Expense,Payroll pj and renz,2000,10242026,
+25/10/2026 01:21:56,Expense,Ice tube,310,10242026,
+25/10/2026 01:32:49,Expense,Crew meal ,234,10242026,
+16/11/2026 15:07:23,Income,nov 27 dp,20000,11262026,
+16/11/2026 15:09:24,Expense,Liquor for 27,19975,11262026,
+17/11/2026 16:43:22,Expense,juice,1642,11262026,Kevin
+20/11/2026 15:16:59,Expense,David commision ,4000,11262026,
+23/11/2026 19:23:24,Income,DP,11250,12012026,
+23/11/2026 19:25:09,Expense,Additional liquor blue curacao coconut rum,603,12012026,
+23/11/2026 19:26:13,Expense,"Soda and juice, fruits ",913.6,12012026,
+23/11/2026 19:27:11,Expense,Sprits and cordials hl,3469.5,12012026,
+23/11/2026 19:28:44,Expense,Gas avanza and park fee,550,12012026,
+25/11/2026 15:07:14,Expense,Amaretto additional cordials ,1060,12012026,

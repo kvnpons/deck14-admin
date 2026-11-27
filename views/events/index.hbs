@@ -1,0 +1,66 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Events</h1>
+    <div class="actions">
+      <a class="btn btn-secondary" href="/booking-links">Booking links</a>
+      <a class="btn btn-primary" href="/events/new">+ Schedule event</a>
+    </div>
+  </div>
+
+  <form method="GET" action="/events" class="filters">
+    <input type="hidden" name="sort" value="{{sort}}">
+    <input type="hidden" name="dir" value="{{dir}}">
+    <label>Filter:
+      <select name="status" onchange="this.form.submit()">
+        <option value="">All</option>
+        {{#if (eq statusFilter 'PENDING,CONFIRMED')}}<option value="PENDING,CONFIRMED" selected>Pending &amp; Confirmed</option>{{/if}}
+        <option value="PENDING" {{#if (eq statusFilter 'PENDING')}}selected{{/if}}>Pending</option>
+        <option value="CONFIRMED" {{#if (eq statusFilter 'CONFIRMED')}}selected{{/if}}>Confirmed</option>
+        <option value="COMPLETED" {{#if (eq statusFilter 'COMPLETED')}}selected{{/if}}>Completed</option>
+        <option value="CANCELLED" {{#if (eq statusFilter 'CANCELLED')}}selected{{/if}}>Cancelled</option>
+      </select>
+    </label>
+  </form>
+
+  {{#if events.length}}
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th><a href="{{columns.clientName.href}}">Client {{columns.clientName.arrow}}</a></th>
+        <th><a href="{{columns.eventDate.href}}">Event date {{columns.eventDate.arrow}}</a></th>
+        <th><a href="{{columns.pax.href}}">Pax {{columns.pax.arrow}}</a></th>
+        <th><a href="{{columns.ingressTime.href}}">Ingress {{columns.ingressTime.arrow}}</a></th>
+        <th><a href="{{columns.barOpenTime.href}}">Bar open {{columns.barOpenTime.arrow}}</a></th>
+        <th><a href="{{columns.status.href}}">Status {{columns.status.arrow}}</a></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each events}}
+        <tr>
+          <td>{{#if this.clientId}}<a href="/clients/{{this.clientId}}">{{this.clientName}}</a>{{else}}{{this.clientName}}{{/if}}</td>
+          <td>{{formatDate this.eventDate}}</td>
+          <td>{{this.pax}}</td>
+          <td>{{this.ingressTime}}</td>
+          <td>{{this.barOpenTime}}</td>
+          <td><span class="pill pill-{{this.status}}">{{this.status}}</span></td>
+          <td><a href="/events/{{this.id}}">Open</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{#if (gt pages 1)}}
+  <nav class="pagination">
+    {{#if hasPrev}}<a class="btn btn-secondary" href="/events?{{prevQuery}}">&larr; Prev</a>{{/if}}
+    <span class="muted">Page {{page}} of {{pages}} · {{total}} events</span>
+    {{#if hasNext}}<a class="btn btn-secondary" href="/events?{{nextQuery}}">Next &rarr;</a>{{/if}}
+  </nav>
+  {{/if}}
+  {{else}}
+    <p class="muted">No events match your filter.</p>
+  {{/if}}
+</main>
+{{> footer}}

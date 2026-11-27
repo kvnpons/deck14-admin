@@ -1,0 +1,35 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="page-head">
+    <h1>Invoices</h1>
+    <div class="actions">
+      <a class="btn btn-primary" href="/invoices/new">+ New invoice</a>
+    </div>
+  </div>
+
+  <section class="card">
+    {{#if invoices.length}}
+    <table class="data-table">
+      <thead>
+        <tr><th>Invoice #</th><th>Date</th><th>Customer</th><th class="num">Total</th><th></th></tr>
+      </thead>
+      <tbody>
+        {{#each invoices}}
+          <tr>
+            <td><a href="/invoices/{{this.id}}">{{this.number}}</a></td>
+            <td>{{formatDate this.issueDate}}</td>
+            <td>{{this.customerName}}</td>
+            <td class="num">₱ {{formatMoney this.total}}</td>
+            <td><a href="/invoices/{{this.id}}/export.pdf">Export PDF</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+      <p class="muted">No invoices yet.</p>
+    {{/if}}
+  </section>
+</main>
+{{> footer}}

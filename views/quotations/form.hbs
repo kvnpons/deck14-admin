@@ -1,0 +1,121 @@
+{{> head}}
+{{> nav}}
+<main class="container">
+  {{> flash}}
+  <div class="form-center">
+  <h1>{{title}}</h1>
+  <p class="muted">For <a href="/events/{{event.id}}">{{event.clientName}}</a> · {{formatDate event.eventDate}}{{#if event.venue}} · {{event.venue}}{{/if}}</p>
+  {{#if locked}}<p class="error">Converted to an invoice — this quotation can no longer be edited.</p>{{/if}}
+  {{#if hasMain}}<p class="error">This event already has a main quotation. Use “Additional request” for extras.</p>{{/if}}
+
+  <form method="POST" action="{{action}}" class="form-card form-card-wide" id="quote-form" data-items="{{json items}}"
+        data-base="{{rates.baseFee}}" data-rate="{{rates.transportRate}}" data-block="{{rates.blockKm}}" data-main="{{#if isMain}}1{{/if}}">
+    <input type="hidden" name="kind" value="{{kind}}" />
+
+    {{#if isMain}}
+    <label>
+      <span>Distance from {{rates.origin}} (km) — transport is ₱{{formatMoney rates.transportRate}} per {{rates.blockKm}} km</span>
+      <input type="number" name="distanceKm" id="distance" min="0" step="0.1" value="{{q.distanceKm}}" required />
+    </label>
+    <label>
+      <span>Pax</span>
+      <input type="number" name="pax" id="pax" min="0" step="1" value="{{q.pax}}" required />
+    </label>
+    <label>
+      <span>Price per pax (₱)</span>
+      <input type="number" name="pricePerPax" id="ppp" min="0" step="0.01" value="{{q.pricePerPax}}" required />
+    </label>
+
+    <table class="data-table">
+      <tbody>
+        <tr><td>Service base fee</td><td class="num">₱ <span id="base-amt">0.00</span></td></tr>
+        <tr><td>Transportation fee</td><td class="num">₱ <span id="transport-amt">0.00</span></td></tr>
+        <tr><td>Pax charge</td><td class="num">₱ <span id="pax-amt">0.00</span></td></tr>
+      </tbody>
+    </table>
+    {{/if}}
+
+    <h2>Add-ons</h2>
+    <table class="data-table line-items">
+      <thead>
+        <tr><th>Description</th><th class="col-qty">Qty</th><th class="col-unit">Price / unit</th><th class="col-amt">Amount</th><th class="col-x"></th></tr>
+      </thead>
+      <tbody id="items"></tbody>
+    </table>
+    <div><button type="button" class="btn btn-secondary" id="add-row">+ Add line</button></div>
+
+    <div class="invoice-total"><span>Total</span><span>₱ <span id="grand-total">0.00</span></span></div>
+
+    <label>
+      <span>Notes (optional)</span>
+      <textarea name="notes" rows="2">{{q.notes}}</textarea>
+    </label>
+
+    <div class="form-actions">
+      <a class="btn btn-link" href="{{cancelHref}}">Cancel</a>
+      <button type="submit" class="btn btn-primary" {{#if locked}}disabled{{/if}}>Save quotation</button>
+    </div>
+  </form>
+  </div>
+</main>
+
+<template id="row-tpl">
+  <tr>
+    <td><textarea name="itemDescription" rows="2"></textarea></td>
+    <td class="col-qty"><input type="number" name="itemQuantity" min="0.01" step="0.01" value="1" /></td>
+    <td class="col-unit"><input type="number" name="itemUnitPrice" min="0" step="0.01" /></td>
+    <td class="col-amt">₱ <span class="row-amt">0.00</span></td>
+    <td class="col-x"><button type="button" class="btn-icon remove-row" title="Remove">×</button></td>
+  </tr>
+</template>
+
+<script>
+  (function () {
+    var form = document.getElementById('quote-form');
+    var body = document.getElementById('items');
+    var tpl = document.getElementById('row-tpl');
+    var isMain = form.dataset.main === '1';
+    var BASE = parseFloat(form.dataset.base), RATE = parseFloat(form.dataset.rate), BLOCK = parseFloat(form.dataset.block);
+    var fmt = function (n) { return n.toLocaleString('en-PH', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+    var r2 = function (n) { return Math.round((n + Number.EPSILON) * 100) / 100; };
+    var num = function (id) { return parseFloat(document.getElementById(id).value) || 0; };
+    var set = function (id, v) { document.getElementById(id).textContent = fmt(v); };
+
+    function recalc() {
+      var total = 0;
+      body.querySelectorAll('tr').forEach(function (tr) {
+        var q = parseFloat(tr.querySelector('[name=itemQuantity]').value) || 0;
+        var u = parseFloat(tr.querySelector('[name=itemUnitPrice]').value) || 0;
+        var amt = r2(q * u);
+        tr.querySelector('.row-amt').textContent = fmt(amt);
+        total += amt;
+      });
+      if (isMain) {
+        var transport = r2(num('distance') / BLOCK * RATE);
+        var pax = r2(num('pax') * num('ppp'));
+        set('base-amt', BASE); set('transport-amt', transport); set('pax-amt', pax);
+        total += BASE + transport + pax;
+      }
+      set('grand-total', r2(total));
+    }
+    function addRow(it) {
+      var node = tpl.content.cloneNode(true);
+      if (it) {
+        node.querySelector('[name=itemDescription]').value = it.description;
+        node.querySelector('[name=itemQuantity]').value = it.quantity;
+        node.querySelector('[name=itemUnitPrice]').value = it.unitPrice;
+      }
+      body.appendChild(node);
+    }
+    document.getElementById('add-row').addEventListener('click', function () { addRow(); recalc(); });
+    form.addEventListener('input', recalc);
+    body.addEventListener('click', function (e) {
+      if (!e.target.classList.contains('remove-row')) return;
+      e.target.closest('tr').remove(); recalc();
+    });
+    JSON.parse(form.dataset.items || '[]').forEach(addRow);
+    if (!body.children.length) addRow();
+    recalc();
+  })();
+</script>
+{{> footer}}
